@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ECMAScript2015 | 阿海blog</title>
+  <meta name="keywords" content=" ECMAScript2015 ">
+  <meta name="description" content="ECMAScript2015 | 阿海blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:site_name" content="阿海blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-25T08:10:00.000Z">
+<meta property="article:modified_time" content="2019-12-25T08:13:10.627Z">
+<meta property="article:author" content="阿海">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>阿海</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/lijinhai255" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(19)</small></div></li>
+    
+        
+            
+            <li><div data-rel="大前端">大前端<small>(12)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="大后端">大后端<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维">运维<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="19">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color2">jQuery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">表格</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">表单验证</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">ECMAScript2015</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">大前端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">CSS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">函数</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">对象 - 重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Linux</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">js获取鼠标选中的文字内容</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Desctructuring</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">Docker</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">React插件</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Template</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">环境安装</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">VIM</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">工具类</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">类 - 重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">数组 - 重学ES5</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="大前端 "
+           href="/2019/12/25/hello-world/"
+           data-tag="jQuery,表格,表单验证"
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-12-25 11:57:31">2019/12/25</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/24/ECMAScript2015/"
+           data-tag="ECMAScript2015"
+           data-author="" >
+            <span class="post-title" title="ECMAScript2015">ECMAScript2015</span>
+            <span class="post-date" title="2019-12-24 00:00:00">2019/12/24</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/SSR/"
+           data-tag="大前端"
+           data-author="" >
+            <span class="post-title" title="SSR">SSR</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/23/css%E6%A1%88%E4%BE%8B/"
+           data-tag="CSS"
+           data-author="" >
+            <span class="post-title" title="css案例">css案例</span>
+            <span class="post-date" title="2019-12-23 00:00:00">2019/12/23</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/Function/"
+           data-tag="函数,重学ES5"
+           data-author="" >
+            <span class="post-title" title="Function">Function</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/12/02/grid/"
+           data-tag="大前端"
+           data-author="" >
+            <span class="post-title" title="grid">grid</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/Object/"
+           data-tag="对象 - 重学ES5"
+           data-author="" >
+            <span class="post-title" title="Object">Object</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大后端 "
+           href="/2019/12/02/linux%E6%8C%87%E4%BB%A4/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="linux指令">linux指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/js%E8%8E%B7%E5%8F%96%E6%96%87%E6%9C%AC/"
+           data-tag="js获取鼠标选中的文字内容"
+           data-author="" >
+            <span class="post-title" title="js获取文本">js获取文本</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/11/destructore/"
+           data-tag="重学ES5,Desctructuring"
+           data-author="" >
+            <span class="post-title" title="destructore">destructore</span>
+            <span class="post-date" title="2019-12-11 00:00:00">2019/12/11</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/2019/12/17/docker/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker">docker</span>
+            <span class="post-date" title="2019-12-17 00:00:00">2019/12/17</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/"
+           data-tag="React插件"
+           data-author="" >
+            <span class="post-title" title="react到处表格">react到处表格</span>
+            <span class="post-date" title="2019-12-24 00:00:00">2019/12/24</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/12/02/svn%E6%8C%87%E4%BB%A4/"
+           data-tag="大前端"
+           data-author="" >
+            <span class="post-title" title="svn指令">svn指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/template/"
+           data-tag="重学ES5,Template"
+           data-author="" >
+            <span class="post-title" title="template">template</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E5%89%8D%E7%AB%AF%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%8C%87%E4%BB%A4/"
+           data-tag="环境安装"
+           data-author="" >
+            <span class="post-title" title="前端环境安装指令">前端环境安装指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大后端 "
+           href="/2019/12/02/vim%E6%8C%87%E4%BB%A4/"
+           data-tag="VIM"
+           data-author="" >
+            <span class="post-title" title="vim指令">vim指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/02/%E5%B7%A5%E5%85%B7/"
+           data-tag="工具类"
+           data-author="" >
+            <span class="post-title" title="工具">工具</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E7%B1%BB/"
+           data-tag="类 - 重学ES5"
+           data-author="" >
+            <span class="post-title" title="类">类</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E6%95%B0%E7%BB%84/"
+           data-tag="数组 - 重学ES5"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-ECMAScript2015" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">ECMAScript2015</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="大前端">大前端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">ECMAScript2015</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-26 18:15:14'>2019-12-24 00:00</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ECMAScript2015"><span class="toc-text">ECMAScript2015</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-let和const命令"><span class="toc-text">1-let和const命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-let-命令"><span class="toc-text">1.1 let 命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-const-命令"><span class="toc-text">1.2 const 命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-变量的解构赋值"><span class="toc-text">2-变量的解构赋值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-数组"><span class="toc-text">2.1 数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-对象的解构赋值"><span class="toc-text">2.2 对象的解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-字符串的解构赋值"><span class="toc-text">2.3 字符串的解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-数值和布尔值的解构赋值"><span class="toc-text">2.4 数值和布尔值的解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-函数参数的解构赋值"><span class="toc-text">2.5 函数参数的解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-应用"><span class="toc-text">2.6 应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-字符串的拓展"><span class="toc-text">3 字符串的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-includes-startsWith-endsWith"><span class="toc-text">3.1 includes(),startsWith(),endsWith()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-repeat"><span class="toc-text">3.2 repeat()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-padStart-padEnd"><span class="toc-text">3.3 padStart(),padEnd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-模版字符串"><span class="toc-text">3.4 模版字符串</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-正则的拓展"><span class="toc-text">4 正则的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-介绍"><span class="toc-text">4.1 介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-字符串的正则方法"><span class="toc-text">4.2 字符串的正则方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-u修饰符"><span class="toc-text">4.3 u修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-y修饰符"><span class="toc-text">4.4 y修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-flags属性"><span class="toc-text">4.5 flags属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-数值的拓展"><span class="toc-text">5 数值的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Number-isFinite-Number-isNaN"><span class="toc-text">Number.isFinite(), Number.isNaN()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-Number-parseInt-Number-parseFloat"><span class="toc-text">5.2 Number.parseInt(), Number.parseFloat()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-Number-isInteger"><span class="toc-text">5.3 Number.isInteger()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-Math对象的拓展"><span class="toc-text">5.4 Math对象的拓展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-指数运算符"><span class="toc-text">5.5 指数运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-函数的拓展"><span class="toc-text">6 函数的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-参数默认值"><span class="toc-text">6.1 参数默认值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-rest-参数"><span class="toc-text">6.2 rest 参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-name-属性"><span class="toc-text">6.3 name 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-箭头函数"><span class="toc-text">6.4 箭头函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-5-双冒号运算符"><span class="toc-text">6.5 双冒号运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-数组的拓展"><span class="toc-text">7 数组的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-拓展运算符"><span class="toc-text">7.1 拓展运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-Array-from"><span class="toc-text">7.2 Array.from()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-Array-of"><span class="toc-text">7.3 Array.of()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-find-和findIndex"><span class="toc-text">7.4 find()和findIndex()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-fill"><span class="toc-text">7.5 fill()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-6-entries-keys-values"><span class="toc-text">7.6 entries(),keys(),values()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-7-includes"><span class="toc-text">7.7 includes()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-8-flat-flatMap"><span class="toc-text">7.8 flat(),flatMap()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-对象的拓展"><span class="toc-text">8 对象的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-属性的简洁表示"><span class="toc-text">8.1 属性的简洁表示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-属性名表达式"><span class="toc-text">8.2 属性名表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-Object-is"><span class="toc-text">8.3 Object.is()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-4-Object-assign"><span class="toc-text">8.4 Object.assign()</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ECMAScript2015"><a href="#ECMAScript2015" class="headerlink" title="ECMAScript2015"></a>ECMAScript2015</h1><h2 id="1-let和const命令"><a href="#1-let和const命令" class="headerlink" title="1-let和const命令"></a>1-let和const命令</h2><p>在ES6中，我们通常实用 <code>let</code>表示变量，<code>const</code>表示常量，并且 <code>let</code> 和 <code>const</code> 都是块级作用域，且在当前作用域有效不能重复声明</p>
+<h3 id="1-1-let-命令"><a href="#1-1-let-命令" class="headerlink" title="1.1 let 命令"></a>1.1 let 命令</h3><p><code>let</code> 命令的用法和 <code>var</code> 相似，但是 let 只在所在代码块内有效</p>
+<p><strong>基础用法</strong></p>
+<pre><code class="js">{
+  let a = 1;
+  let b = 2;
+}</code></pre>
+<p>并且 <code>let</code> 有以下特点：</p>
+<ul>
+<li>不存在变量提升：<br>在ES6之前，我们 var 声明一个<strong>变量一个函数</strong>，都会伴随着变量提升的问题，导致实际开发过程经常出现一些逻辑上的疑惑，按照一般思维习惯，变量都是需要先声明后使用。<pre><code class="javaScript">// var 
+console.log(v1); // undefined
+var v1 = 2;
+// 由于变量提升 代码实际如下
+var v1;
+console.log(v1)
+v1 = 2;
+// let 
+console.log(v2); // ReferenceError
+let v2 = 2;</code></pre>
+</li>
+<li>不允许重复声明：<br><code>let</code> 和 <code>const</code> 在<strong>相同作用域下</strong>，都<strong>不能重复声明同一变量</strong>，并且<strong>不能在函数内重新声明参数。</strong></li>
+</ul>
+<pre><code class="javaScript">// 1. 不能重复声明同一变量
+// 报错
+function f1 (){
+    let a = 1;
+    var a = 2;
+}
+// 报错
+function f2 (){
+    let a = 1;
+    let a = 2;
+}
+
+// 2. 不能在函数内重新声明参数
+// 报错
+function f3 (a1){
+    let a1; 
+}
+// 不报错
+function f4 (a2){
+    {
+        let a2
+    }
+}</code></pre>
+<h3 id="1-2-const-命令"><a href="#1-2-const-命令" class="headerlink" title="1.2 const 命令"></a>1.2 const 命令</h3><p><code>const</code> 声明一个只读的常量。</p>
+<p><strong>基础用法：</strong></p>
+<pre><code class="js">const PI = 3.1415926;
+console.log(PI);  // 3.1415926</code></pre>
+<p><strong>注意点：</strong></p>
+<ul>
+<li><code>const</code> 声明后，无法修改值；<pre><code class="javaScript">const PI = 3.1415926;
+PI = 3; 
+// TypeError: Assignment to constant variable.</code></pre>
+</li>
+<li><code>const</code> 声明时，必须赋值；<pre><code class="js">const a ; 
+// SyntaxError: Missing initializer in const declaration.</code></pre>
+</li>
+<li><code>const</code> 声明的常量，<code>let</code> 不能重复声明；<pre><code class="js">const PI = 3.1415926;
+let PI = 0;  
+// Uncaught SyntaxError: Identifier &#39;PI&#39; has already been declared</code></pre>
+</li>
+</ul>
+<h2 id="2-变量的解构赋值"><a href="#2-变量的解构赋值" class="headerlink" title="2-变量的解构赋值"></a>2-变量的解构赋值</h2><p><code>解构赋值概念：</code>在ES6中，直接从数组和对象中取值，按照对应位置，赋值给变量的操作。</p>
+<h3 id="2-1-数组"><a href="#2-1-数组" class="headerlink" title="2.1 数组"></a>2.1 数组</h3><p><strong>基础用法：</strong></p>
+<pre><code class="js">// ES6 之前
+let a = 1;
+let b = 2;
+
+// ES6 之后
+let [a, b] = [1, 2];</code></pre>
+<p>本质上，只要等号两边模式一致，左边变量即可获取右边对应位置的值，更多用法：</p>
+<pre><code class="js">let [a, [[b], c]] = [1, [[2], 3]];
+console.log(a, b, c); // 1, 2, 3
+let [ , , c] = [1, 2, 3];
+console.log(c);       // 3
+let [a, , c] = [1, 2, 3];
+console.log(a,c);     // 1, 3
+let [a, ...b] = [1, 2, 3];
+console.log(a,b);     // 1, [2,3]
+let [a, b, ..c.] = [1];
+console.log(a, b, c); // 1, undefined, []</code></pre>
+<p><strong>注意点：</strong></p>
+<ul>
+<li>如果解构不成功，变量的值就等于undefined。<pre><code class="js">let [a] = [];     // a =&gt; undefined
+let [a, b] = [1]; // a =&gt; 1 , b =&gt; undefined</code></pre>
+</li>
+<li>当左边模式多于右边，也可以解构成功。<pre><code class="js">let [a, b] = [1, 2, 3];
+console.log(a, b); // 1, 2</code></pre>
+</li>
+<li>两边模式不同，报错。<pre><code class="js">let [a] = 1;
+let [a] = false;
+let [a] = NaN;
+let [a] = undefined;
+let [a] = null;
+let [a] = {};</code></pre>
+</li>
+<li><em>指定解构的默认值：*</em></li>
+<li><em>基础用法：*</em><pre><code class="js">let [a = 1] = [];      // a =&gt; 1
+let [a, b = 2] = [a];  // a =&gt; 1 , b =&gt; 2</code></pre>
+</li>
+<li><em>特殊情况：*</em><pre><code class="js">let [a = 1] = [undefined]; // a =&gt; 1
+let [a = 1] = [null];      // a =&gt; null</code></pre>
+<h3 id="2-2-对象的解构赋值"><a href="#2-2-对象的解构赋值" class="headerlink" title="2.2 对象的解构赋值"></a>2.2 对象的解构赋值</h3>右边模式对应的值，必须严格等于<code>undefined</code>，默认值才能生效，而<code>null</code>不严格等于<code>undefined</code>。</li>
+<li><em>基础用法：*</em><pre><code class="js">let {a, b} = {a:1, b:2};  // a =&gt; 1 , b =&gt; 2
+let {a, b} = {a:2, b:1};  // a =&gt; 2 , b =&gt; 1
+let {a} = {a:3, b:2, c:1};// a =&gt; 3
+let {a} = {b:2, c:1};     // a =&gt; undefined</code></pre>
+</li>
+<li><em>注意点：*</em></li>
+<li>若变量名和属性名不一致，则需要修改名称。<pre><code class="js">let {a:b} = {a:1, c:2}; 
+// error: a is not defined
+// b =&gt; 1</code></pre>
+对象的解构赋值的内部机制，是先找到同名属性，然后再赋给对应的变量。真正被赋值的是后者，而不是前者。<br>上面代码中，<code>a</code>是匹配的模式，<code>b</code>才是变量。真正被赋值的是变量<code>b</code>，而不是模式<code>a</code>。</li>
+<li>对象解构也支持嵌套解构。<pre><code class="js">let obj = {
+  a:[ 1, { b: 2}]
+};
+let {a, a: [c, {b}]} = obj;
+// a=&gt;[1, {b: 2}], b =&gt; 2, c =&gt; 1</code></pre>
+</li>
+<li><em>指定解构的默认值：*</em><pre><code class="javaScript">let {a=1} = {};        // a =&gt; 1
+let {a, b=1} = {a:2};  // a =&gt; 2, b =&gt; 1
+let {a:b=3} = {};      // b =&gt; 3
+let {a:b=3} = {a:4};   // b = &gt;4
+// a是模式，b是变量 牢记
+let {a=1} = {a:undefined};  // a =&gt; 1
+let {a=1} = {a:null};   // a =&gt; null
+// 因为null与undefined不严格相等，所以赋值有效
+// 导致默认值1不会生效。</code></pre>
+</li>
+</ul>
+<h3 id="2-3-字符串的解构赋值"><a href="#2-3-字符串的解构赋值" class="headerlink" title="2.3 字符串的解构赋值"></a>2.3 字符串的解构赋值</h3><p>字符串的解构赋值中，字符串被转换成了一个<strong>类似数组的对象</strong>。 <strong>基础用法：</strong></p>
+<pre><code class="js">const [a, b, c, d, e] = &#39;hello&#39;;
+a // &quot;h&quot;
+b // &quot;e&quot;
+c // &quot;l&quot;
+d // &quot;l&quot;
+e // &quot;o&quot;
+
+let {length:len} = &#39;hello&#39;;// len =&gt; 5</code></pre>
+<h3 id="2-4-数值和布尔值的解构赋值"><a href="#2-4-数值和布尔值的解构赋值" class="headerlink" title="2.4 数值和布尔值的解构赋值"></a>2.4 数值和布尔值的解构赋值</h3><p>解构赋值的规则是，只要等号右边的值不是对象或数组，就先将其转为对象。由于undefined和null无法转为对象，所以对它们进行解构赋值，都会报错。</p>
+<pre><code class="js">// 数值和布尔值的包装对象都有toString属性
+let {toString: s} = 123;
+s === Number.prototype.toString // true
+let {toString: s} = true;
+s === Boolean.prototype.toString // true
+
+let { prop: x } = undefined; // TypeError
+let { prop: y } = null;      // TypeError</code></pre>
+<h3 id="2-5-函数参数的解构赋值"><a href="#2-5-函数参数的解构赋值" class="headerlink" title="2.5 函数参数的解构赋值"></a>2.5 函数参数的解构赋值</h3><p><strong>基础使用：</strong></p>
+<pre><code class="javaScript">function fun ([a, b]){
+    return a + b;
+}
+fun ([1, 2]); // 3</code></pre>
+<p><strong>指定默认值的解构:</strong></p>
+<pre><code class="javaScript">function fun ({a=0, b=0} = {}){
+    return [a, b];
+}
+fun ({a:1, b:2}); // [1, 2]
+fun ({a:1});      // [1, 0]
+fun ({});         // [0, 0]
+fun ();           // [0, 0]
+
+function fun ({a, b} = {a:0, b:0}){
+    return [a, b];
+}
+fun ({a:1, b:2}); // [1, 2]
+fun ({a:1});      // [1, undefined]
+fun ({});         // [undefined, undefined]
+fun ();           // [0, 0]</code></pre>
+<h3 id="2-6-应用"><a href="#2-6-应用" class="headerlink" title="2.6 应用"></a>2.6 应用</h3><ul>
+<li>交换变量的值:<pre><code class="javaScript">let a = 1,b = 2;
+[a, b] = [b, a]; // a =&gt;2 , b =&gt; 1 </code></pre>
+</li>
+<li>函数返回多个值:<pre><code class="javaScript">// 返回一个数组
+function f (){
+  return [1, 2, 3];
+}
+let [a, b, c] = f(); // a=&gt;1, b=&gt;2, c=&gt;3
+// 返回一个对象
+function f (){
+  return {a:1, b:2};
+}
+let {a, b} = f();    // a=&gt;1, b=&gt;2</code></pre>
+</li>
+<li>快速对应参数: 快速的将一组参数与变量名对应。<pre><code class="javaScript">function f([a, b, c]) {...}
+f([1, 2, 3]);
+function f({a, b, c}) {...}
+f({b:2, c:3, a:1});</code></pre>
+</li>
+<li>提取JSON数据：<pre><code class="javaScript">let json = {
+  name : &#39;leo&#39;,
+  age: 18
+}
+let {name, age} = json;
+console.log(name,age); // leo, 18</code></pre>
+</li>
+<li>提取JSON数据：<pre><code class="javaScript">let json = {
+  name : &#39;leo&#39;,
+  age: 18
+}
+let {name, age} = json;
+console.log(name,age); // leo, 18</code></pre>
+</li>
+<li>遍历Map结构:<pre><code class="javaScript">const m = new Map();
+m.set(&#39;a&#39;, 1);
+m.set(&#39;b&#39;, 2);
+for (let [k, v] of m){
+  console.log(k + &#39; : &#39; + v);
+}
+// 获取键名
+for (let [k] of m){...}
+// 获取键值
+for (let [,k] of m){...}</code></pre>
+</li>
+<li>输入模块的指定方法: 用于按需加载模块中需要用到的方法。<pre><code class="javaScript">const {log, sin, cos} = require(&#39;math&#39;);</code></pre>
+</li>
+</ul>
+<h2 id="3-字符串的拓展"><a href="#3-字符串的拓展" class="headerlink" title="3 字符串的拓展"></a>3 字符串的拓展</h2><h3 id="3-1-includes-startsWith-endsWith"><a href="#3-1-includes-startsWith-endsWith" class="headerlink" title="3.1 includes(),startsWith(),endsWith()"></a>3.1 includes(),startsWith(),endsWith()</h3><p>在我们判断字符串是否包含另一个字符串时，ES6之前，我们只有typeof方法，ES6之后我们又多了三种方法：</p>
+<ul>
+<li><strong>includes()</strong>:返回布尔值，表示<strong>是否找到参数字符串。</strong></li>
+<li><strong>startsWith():</strong>返回布尔值，表示参数字符串是否在原字符串的<strong>头部</strong>。</li>
+<li><strong>endsWith():</strong>返回布尔值，表示参数字符串是否在原字符串的<strong>尾部。</strong><pre><code class="javaScript">let a = &#39;hello leo&#39;;
+a.startsWith(&#39;leo&#39;);   // false
+a.endsWith(&#39;o&#39;);       // true
+a.includes(&#39;lo&#39;);      // true</code></pre>
+并且这三个方法都支持第二个参数，表示起始搜索的位置。<pre><code class="javaScript">let a = &#39;hello leo&#39;;
+a.startsWith(&#39;leo&#39;,1);   // false
+a.endsWith(&#39;o&#39;,5);       // true
+a.includes(&#39;lo&#39;,6);      // false</code></pre>
+endsWith 是针对前 n 个字符，而其他两个是针对从第n个位置直到结束。</li>
+</ul>
+<h3 id="3-2-repeat"><a href="#3-2-repeat" class="headerlink" title="3.2 repeat()"></a>3.2 repeat()</h3><p><code>repeat</code>方法返回一个新字符串，表示将原字符串重复<code>n</code>次。<br><strong>基础用法：</strong></p>
+<pre><code class="javaScript">&#39;ab&#39;.repeat(3);        // &#39;ababab&#39;
+&#39;ab&#39;.repeat(0);        // &#39;&#39;</code></pre>
+<p><strong>特殊用法:</strong></p>
+<ul>
+<li>参数为<code>小数</code>，则取整<pre><code class="javaScript">&#39;ab&#39;.repeat(2.3);      // &#39;abab&#39;</code></pre>
+</li>
+<li>参数为<code>负数</code>或<code>Infinity</code>，则报错<pre><code class="javaScript">&#39;ab&#39;.repeat(-1);       // RangeError
+&#39;ab&#39;.repeat(Infinity); // RangeError</code></pre>
+</li>
+<li>参数为<code>0到-1的小数</code>或<code>NaN</code>，则取0<pre><code class="javaScript">&#39;ab&#39;.repeat(-0.5);     // &#39;&#39;
+&#39;ab&#39;.repeat(NaN);      // &#39;&#39;</code></pre>
+</li>
+<li>参数为<code>字符串</code>，则转成<code>数字</code><pre><code class="javaScript">&#39;ab&#39;.repeat(&#39;ab&#39;);     // &#39;&#39;
+&#39;ab&#39;.repeat(&#39;3&#39;);      // &#39;ababab&#39;</code></pre>
+<h3 id="3-3-padStart-padEnd"><a href="#3-3-padStart-padEnd" class="headerlink" title="3.3 padStart(),padEnd()"></a>3.3 padStart(),padEnd()</h3>用于将字符串<code>头部</code>或<code>尾部</code>补全长度，<code>padStart()</code>为<code>头部补全</code>，<code>padEnd()</code>为<code>尾部补全</code>。<br>这两个方法接收2个参数，第一个指定<code>字符串最小长度</code>，第二个<code>用于补全的字符串</code>。</li>
+<li><em>基础用法 ：*</em><pre><code class="javaScript">&#39;x&#39;.padStart(5, &#39;ab&#39;);   // &#39;ababx&#39;
+&#39;x&#39;.padEnd(5, &#39;ab&#39;);     // &#39;xabab&#39;</code></pre>
+</li>
+<li><em>特殊用法:*</em></li>
+<li>原字符串长度，大于或等于指定最小长度，则返回原字符串。<pre><code class="javaScript">&#39;xyzabc&#39;.padStart(5, &#39;ab&#39;); // &#39;xyzabc&#39;</code></pre>
+</li>
+<li>用来补全的字符串长度和原字符串长度之和，超过指定最小长度，则截去超出部分的补全字符串。<pre><code class="javaScript">&#39;ab&#39;.padStart(5,&#39;012345&#39;); // &quot;012ab&quot;</code></pre>
+</li>
+<li>省略第二个参数，则用<code>空格</code>补全。<pre><code class="javaScript">&#39;x&#39;.padStart(4);           // &#39;    x&#39;
+&#39;x&#39;.padEnd(4);             // &#39;x    &#39;</code></pre>
+<h3 id="3-4-模版字符串"><a href="#3-4-模版字符串" class="headerlink" title="3.4 模版字符串"></a>3.4 模版字符串</h3>用于拼接字符串，ES6之前：<pre><code class="javaScript">let a = &#39;abc&#39; + 
+  &#39;def&#39; + 
+  &#39;ghi&#39;;
+</code></pre>
+</li>
+</ul>
+<pre><code>ES6之后：
+````javaScript
+let a = `
+    abc
+    def
+    ghi
+`</code></pre><p>拼接变量: 在<strong>反引号(`)</strong>中使用${}包裹变量或方法。</p>
+<pre><code class="javaScript">// ES6之前
+let a = &#39;abc&#39; + v1 + &#39;def&#39;;
+
+// ES6之后
+let a = `abc${v1}def`</code></pre>
+<h2 id="4-正则的拓展"><a href="#4-正则的拓展" class="headerlink" title="4 正则的拓展"></a>4 正则的拓展</h2><h3 id="4-1-介绍"><a href="#4-1-介绍" class="headerlink" title="4.1 介绍"></a>4.1 介绍</h3><p>在ES5中有两种情况。</p>
+<ul>
+<li>参数是<code>字符串</code>，则第二个参数为正则表达式的修饰符。<pre><code class="javaScript">let a = new RegExp(&#39;abc&#39;, &#39;i&#39;);
+// 等价于
+let a = /abx/i;</code></pre>
+</li>
+<li>参数是<code>正则表达式</code>，返回一个原表达式的拷贝，且不能有第二个参数，否则报错。<pre><code class="javaScript">let a = new RegExp(/abc/i);
+//等价于
+let a = /abx/i;
+</code></pre>
+</li>
+</ul>
+<p>let a = new RegExp(/abc/, ‘i’);<br>//  Uncaught TypeError</p>
+<pre><code>ES6中使用：
+第一个参数是正则对象，第二个是指定修饰符，如果第一个参数已经有修饰符，则会被第二个参数覆盖。
+````javaScript
+new RegExp(/abc/ig, &#39;i&#39;);</code></pre><h3 id="4-2-字符串的正则方法"><a href="#4-2-字符串的正则方法" class="headerlink" title="4.2 字符串的正则方法"></a>4.2 字符串的正则方法</h3><p>常用的四种方法：<code>match()</code>、<code>replace()</code>、<code>search()</code>和<code>split()</code>。</p>
+<h3 id="4-3-u修饰符"><a href="#4-3-u修饰符" class="headerlink" title="4.3 u修饰符"></a>4.3 u修饰符</h3><p>添加<code>u</code>修饰符，是为了处理大于<code>uFFFF</code>的Unicode字符，即正确处理四个字节的UTF-16编码。</p>
+<pre><code class="javaScript">/^\uD83D/u.test(&#39;\uD83D\uDC2A&#39;); // false
+/^\uD83D/.test(&#39;\uD83D\uDC2A&#39;);  // true</code></pre>
+<p>由于ES5之前不支持四个字节UTF-16编码，会识别为两个字符，导致第二行输出<code>true</code>，加入u修饰符后ES6就会识别为一个字符，所以输出<code>false</code>。<br><strong>注意：</strong></p>
+<ul>
+<li><p>(1)点字符 点字符(.)在正则中表示除了换行符以外的任意单个字符。对于码点大于0xFFFF的Unicode字符，点字符不能识别，必须加上u修饰符。</p>
+<pre><code class="javaScript">var a = &quot;𠮷&quot;;
+/^.$/.test(a);  // false
+/^.$/u.test(a); // true</code></pre>
+</li>
+<li><p>(2)Unicode字符表示法 使用ES6新增的大括号表示Unicode字符时，必须在表达式添加<code>u</code>修饰符，才能识别大括号。</p>
+<pre><code class="javaScript">/\u{61}/.test(&#39;a&#39;);      // false
+/\u{61}/u.test(&#39;a&#39;);     // true
+/\u{20BB7}/u.test(&#39;𠮷&#39;); // true</code></pre>
+</li>
+<li><p>(3)量词 使用u修饰符后，所有量词都会正确识别码点大于<code>0xFFFF</code>的 Unicode 字符。</p>
+<pre><code class="javaScript">/a{2}/.test(&#39;aa&#39;);    // true
+/a{2}/u.test(&#39;aa&#39;);   // true
+/𠮷{2}/.test(&#39;𠮷𠮷&#39;);  // false
+/𠮷{2}/u.test(&#39;𠮷𠮷&#39;); // true</code></pre>
+</li>
+<li><p>(4)i修饰符 不加<code>u</code>修饰符，就无法识别非规范的<code>K</code>字符。</p>
+<pre><code class="javaScript">/[a-z]/i.test(&#39;\u212A&#39;) // false
+/[a-z]/iu.test(&#39;\u212A&#39;) // true</code></pre>
+</li>
+<li><p><em>检查是否设置u修饰符： 使用<code>unicode</code>属性。*</em></p>
+<pre><code class="javaScript">const a = /hello/;
+const b = /hello/u;
+a.unicode // false
+b.unicode // true</code></pre>
+<h3 id="4-4-y修饰符"><a href="#4-4-y修饰符" class="headerlink" title="4.4 y修饰符"></a>4.4 y修饰符</h3></li>
+</ul>
+<p><code>y</code>修饰符与g修饰符类似，也是全局匹配，后一次匹配都是从上一次匹配成功的下一个位置开始。区别在于，<code>g</code>修饰符只要剩余位置中存在匹配即可，而<code>y</code>修饰符是必须从<strong>剩余第一个开始</strong>。</p>
+<pre><code class="javaScript">var s = &#39;aaa_aa_a&#39;;
+var r1 = /a+/g;
+var r2 = /a+/y;
+r1.exec(s) // [&quot;aaa&quot;]
+r2.exec(s) // [&quot;aaa&quot;]
+r1.exec(s) // [&quot;aa&quot;]  剩余 &#39;_aa_a&#39;
+r2.exec(s) // null</code></pre>
+<p><code>lastIndex</code>属性: 指定匹配的开始位置：</p>
+<pre><code class="javaScript">const a = /a/y;
+a.lastIndex = 2;  // 从2号位置开始匹配
+a.exec(&#39;wahaha&#39;); // null
+a.lastIndex = 3;  // 从3号位置开始匹配
+let c = a.exec(&#39;wahaha&#39;);
+c.index;          // 3
+a.lastIndex;      // 4</code></pre>
+<p><strong>返回多个匹配：</strong><br>一个<code>y</code>修饰符对<code>match</code>方法只能返回第一个匹配，与<code>g</code>修饰符搭配能返回所有匹配。</p>
+<pre><code class="javaScript">&#39;a1a2a3&#39;.match(/a\d/y);  // [&quot;a1&quot;]
+&#39;a1a2a3&#39;.match(/a\d/gy); // [&quot;a1&quot;, &quot;a2&quot;, &quot;a3&quot;]</code></pre>
+<p><strong>检查是否使用y修饰符：</strong><br>使用<code>sticky</code>属性检查。</p>
+<pre><code class="javaScript">const a = /hello\d/y;
+a.sticky;     // true</code></pre>
+<h3 id="4-5-flags属性"><a href="#4-5-flags属性" class="headerlink" title="4.5 flags属性"></a>4.5 flags属性</h3><p><code>flags</code>属性返回所有正则表达式的修饰符。</p>
+<pre><code class="javaScript">/abc/ig.flags;  // &#39;gi&#39;</code></pre>
+<h2 id="5-数值的拓展"><a href="#5-数值的拓展" class="headerlink" title="5 数值的拓展"></a>5 数值的拓展</h2><h3 id="Number-isFinite-Number-isNaN"><a href="#Number-isFinite-Number-isNaN" class="headerlink" title="Number.isFinite(), Number.isNaN()"></a>Number.isFinite(), Number.isNaN()</h3><p><code>Number.isFinite()</code>用于检查一个数值是否是有限的，即不是<code>Infinity</code>，若参数不是Number类型，则一律返回<code>false</code>。</p>
+<pre><code class="javaScript">Number.isFinite(10);            // true
+Number.isFinite(0.5);           // true
+Number.isFinite(NaN);           // false
+Number.isFinite(Infinity);      // false
+Number.isFinite(-Infinity);     // false
+Number.isFinite(&#39;leo&#39;);         // false
+Number.isFinite(&#39;15&#39;);          // false
+Number.isFinite(true);          // false
+Number.isFinite(Math.random()); // true</code></pre>
+<p><code>Number.isNaN()</code>用于检查是否是NaN，若参数不是<code>NaN</code>，则一律返回<code>false</code>。</p>
+<pre><code class="javaScript">Number.isNaN(NaN);      // true
+Number.isNaN(10);       // false
+Number.isNaN(&#39;10&#39;);     // false
+Number.isNaN(true);     // false
+Number.isNaN(5/NaN);    // true
+Number.isNaN(&#39;true&#39; / 0);      // true
+Number.isNaN(&#39;true&#39; / &#39;true&#39;); // true</code></pre>
+<p><strong>区别：</strong><br>与传统全局的<code>isFinite()</code>和<code>isNaN()</code>方法的区别，传统的这两个方法，是先将参数转换成数值，再判断。<br>而ES6新增的这两个方法则只对数值有效， <code>Number.isFinite()</code>对于非数值一律返回<code>false</code>,<code>Number.isNaN()</code>只有对于NaN才返回<code>true</code>，其他一律返回<code>false</code>。</p>
+<pre><code class="javaScript">isFinite(25);          // true
+isFinite(&quot;25&quot;);        // true
+Number.isFinite(25);   // true
+Number.isFinite(&quot;25&quot;); // false
+isNaN(NaN);            // true
+isNaN(&quot;NaN&quot;);          // true
+Number.isNaN(NaN);     // true
+Number.isNaN(&quot;NaN&quot;);   // false</code></pre>
+<h3 id="5-2-Number-parseInt-Number-parseFloat"><a href="#5-2-Number-parseInt-Number-parseFloat" class="headerlink" title="5.2 Number.parseInt(), Number.parseFloat()"></a>5.2 Number.parseInt(), Number.parseFloat()</h3><p>这两个方法与全局方法<code>parseInt()</code>和<code>parseFloat()</code>一致，目的是逐步<strong>减少全局性的方法</strong>，让<strong>语言更模块化</strong>。</p>
+<pre><code class="javaScript">parseInt(&#39;12.34&#39;);     // 12
+parseFloat(&#39;123.45#&#39;); // 123.45
+Number.parseInt(&#39;12.34&#39;);     // 12
+Number.parseFloat(&#39;123.45#&#39;); // 123.45
+Number.parseInt === parseInt;     // true
+Number.parseFloat === parseFloat; // true</code></pre>
+<h3 id="5-3-Number-isInteger"><a href="#5-3-Number-isInteger" class="headerlink" title="5.3 Number.isInteger()"></a>5.3 Number.isInteger()</h3><p>用来判断一个数值是否是整数，若参数不是数值，则返回<code>false</code>。</p>
+<pre><code class="javaScript">Number.isInteger(10);   // true
+Number.isInteger(10.0); // true
+Number.isInteger(10.1); // false</code></pre>
+<h3 id="5-4-Math对象的拓展"><a href="#5-4-Math对象的拓展" class="headerlink" title="5.4 Math对象的拓展"></a>5.4 Math对象的拓展</h3><p>ES6新增17个数学相关的<code>静态方法</code>，只能在<code>Math对象</code>上调用。</p>
+<ul>
+<li>Math.trunc:<br>用来去除小数的小数部分，返回<code>整数部分。</code><br>若参数为<code>非数值</code>，则先转为<code>数值</code>。<br>若参数为<code>空值</code>或无法<code>截取整数的值</code>，则返回<code>NaN</code>。<pre><code class="javaScript">// 正常使用
+Math.trunc(1.1);     // 1
+Math.trunc(1.9);     // 1
+Math.trunc(-1.1);    // -1
+Math.trunc(-1.9);    // -1
+Math.trunc(-0.1234); // -0
+// 参数为非数值
+Math.trunc(&#39;11.22&#39;); // 11
+Math.trunc(true);    // 1
+Math.trunc(false);   // 0
+Math.trunc(null);    // 0
+// 参数为空和无法取整
+Math.trunc(NaN);       // NaN
+Math.trunc(&#39;leo&#39;);     // NaN
+Math.trunc();          // NaN
+Math.trunc(undefined); // NaN</code></pre>
+</li>
+<li><em>ES5实现：*</em><pre><code class="javaScript">Math.trunc = Math.trunc || function(x){
+   return x &lt; 0 ? Math.ceil(x) : Math.floor(x);
+}</code></pre>
+</li>
+<li>Math.sign():<br>判断一个数是正数、负数还是零，对于非数值，会先转成数值。<br>返回值：</li>
+<li>参数为正数， 返回 +1</li>
+<li>参数为负数， 返回 -1</li>
+<li>参数为0， 返回 0</li>
+<li>参数为-0， 返回 -0</li>
+<li>参数为其他值， 返回 NaN<pre><code class="javaScript">Math.sign(-1);   // -1
+Math.sign(1);    // +1
+Math.sign(0);    // 0
+Math.sign(-0);   // -0
+Math.sign(NaN);  // NaN
+Math.sign(&#39;&#39;);   // 0
+Math.sign(true); // +1
+Math.sign(false);// 0
+Math.sign(null); // 0
+Math.sign(&#39;9&#39;);  // +1
+Math.sign(&#39;leo&#39;);// NaN
+Math.sign();     // NaN
+Math.sign(undefined); // NaN</code></pre>
+ES5实现<pre><code class="javaScript">Math.sign = Math.sign || function (x){
+  x = +x;
+  if (x === 0 || isNaN(x)){
+      return x;
+  }
+  return x &gt; 0 ? 1: -1;
+}</code></pre>
+</li>
+<li>Math.cbrt():<br>用来计算一个数的立方根，若参数为非数值则先转成数值。<pre><code class="javaScript">Math.cbrt(-1); // -1
+Math.cbrt(0);  // 0
+Math.cbrt(1);  // 1
+Math.cbrt(2);  // 1.2599210498
+</code></pre>
+</li>
+</ul>
+<p>Math.cbrt(‘1’);   // 1<br>Math.cbrt(‘leo’); // NaN</p>
+<pre><code>ES5实现
+````javaScript
+Math.cbrt = Math.cbrt || function (x){
+    var a = Math.pow(Math.abs(x), 1/3);
+    return x &lt; 0 ? -y : y;
+}</code></pre><ul>
+<li>Math.clz32():<br>用于返回一个数的 32 位无符号整数形式有多少个前导 0。<pre><code class="javaScript">Math.clz32(0) // 32
+Math.clz32(1) // 31
+Math.clz32(1000) // 22
+Math.clz32(0b01000000000000000000000000000000) // 1
+Math.clz32(0b00100000000000000000000000000000) // 2
+</code></pre>
+</li>
+</ul>
+<pre><code>* Math.imul():
+用于返回两个数以 32 位带符号整数形式相乘的结果，返回的也是一个 32 位的带符号整数。
+````javaScript
+Math.imul(2, 4)   // 8
+Math.imul(-1, 8)  // -8
+Math.imul(-2, -2) // 4</code></pre><ul>
+<li>Math.fround():<br>用来返回一个数的<code>2位单精度浮点数</code>形式。<pre><code class="javaScript">Math.fround(0)   // 0
+Math.fround(1)   // 1
+Math.fround(2 ** 24 - 1)   // 16777215</code></pre>
+</li>
+<li>Math.hypot():<br>用来返回所有参数的平方和的<code>平方根</code>。<pre><code class="javaScript">Math.hypot(3, 4);        // 5
+Math.hypot(3, 4, 5);     // 7.0710678118654755
+Math.hypot();            // 0
+Math.hypot(NaN);         // NaN
+Math.hypot(3, 4, &#39;foo&#39;); // NaN
+Math.hypot(3, 4, &#39;5&#39;);   // 7.0710678118654755
+Math.hypot(-3);          // 3</code></pre>
+</li>
+<li>Math.expm1():<br>用来返回<code>ex - 1</code>，即<code>Math.exp(x) - 1</code>。<pre><code class="javaScript">Math.expm1(-1) // -0.6321205588285577
+Math.expm1(0)  // 0
+Math.expm1(1)  // 1.718281828459045</code></pre>
+ES5实现<pre><code class="javaScript">Math.expm1 = Math.expm1 || function(x) {
+return Math.exp(x) - 1;
+};</code></pre>
+</li>
+<li>Math.log1p():<br>用来返回<code>1 + x</code>的自然对数，即<code>Math.log(1 + x)</code>。如果x小于<code>-1</code>，返回<code>NaN</code>。<pre><code class="javaScript">Math.log1p(1)  // 0.6931471805599453
+Math.log1p(0)  // 0
+Math.log1p(-1) // -Infinity
+Math.log1p(-2) // NaN</code></pre>
+ES5实现<pre><code class="javaScript">Math.log1p = Math.log1p || function(x) {
+return Math.log(1 + x);
+};</code></pre>
+</li>
+<li>Math.log10():<br>用来返回以 10为底的<code>x的对数</code>。如果<code>x</code>小于<code>0</code>，则返回<code>NaN</code>。<pre><code class="javaScript">Math.log10(2)      // 0.3010299956639812
+Math.log10(1)      // 0
+Math.log10(0)      // -Infinity
+Math.log10(-2)     // NaN
+Math.log10(100000) // 5</code></pre>
+ES5实现<pre><code class="javaScript">Math.log10 = Math.log10 || function(x) {
+return Math.log(x) / Math.LN10;
+};
+</code></pre>
+</li>
+</ul>
+<pre><code>* Math.log2():
+用来返回以` 2 `为底的x的对数。如果`x`小于`0`，则返回` NaN`。
+````javaScript
+Math.log2(3)       // 1.584962500721156
+Math.log2(2)       // 1
+Math.log2(1)       // 0
+Math.log2(0)       // -Infinity
+Math.log2(-2)      // NaN
+Math.log2(1024)    // 10
+Math.log2(1 &lt;&lt; 29) // 29</code></pre><p>ES5实现</p>
+<pre><code class="javaScript">Math.log2 = Math.log2 || function(x) {
+  return Math.log(x) / Math.LN2;
+};
+</code></pre>
+<ul>
+<li>双曲函数方法:</li>
+<li><em>Math.sinh(x)*</em> 返回x的双曲正弦<code>（hyperbolic sine）</code></li>
+<li><em>Math.cosh(x)*</em>返回x的双曲余弦<code>（hyperbolic cosine）</code></li>
+<li><em>Math.tanh(x)*</em>返回x的双曲正切<code>（hyperbolic tangent）</code></li>
+<li><em>Math.asinh(x)*</em> 返回x的反双曲正弦<code>（inverse hyperbolic sine）</code></li>
+<li><em>Math.acosh(x)*</em> 返回x的反双曲余弦<code>（inverse hyperbolic cosine）</code></li>
+<li><em>Math.atanh(x)*</em> 返回x的反双曲正切<code>（inverse hyperbolic tangent）</code></li>
+</ul>
+<h3 id="5-5-指数运算符"><a href="#5-5-指数运算符" class="headerlink" title="5.5 指数运算符"></a>5.5 指数运算符</h3><p>新增的指数运算符(<code>**</code>):</p>
+<pre><code>2 ** 2; // 4
+2 ** 3; // 8 
+
+2 ** 3 ** 2; // 相当于 2 ** (3 ** 2); 返回 512
+</code></pre><p>指数运算符(<code>**</code>)与<code>Math.pow</code>的实现不相同，对于特别大的运算结果，两者会有细微的差异。</p>
+<pre><code>Math.pow(99, 99)
+// 3.697296376497263e+197
+
+99 ** 99
+// 3.697296376497268e+197</code></pre><h2 id="6-函数的拓展"><a href="#6-函数的拓展" class="headerlink" title="6 函数的拓展"></a>6 函数的拓展</h2><h3 id="6-1-参数默认值"><a href="#6-1-参数默认值" class="headerlink" title="6.1 参数默认值"></a>6.1 参数默认值</h3><pre><code class="javaScript">// ES6 之前
+function f(a, b){
+    b = b || &#39;leo&#39;;
+    console.log(a, b);
+}
+
+// ES6 之后
+function f(a, b=&#39;leo&#39;){
+    console.log(a, b);
+}
+
+f(&#39;hi&#39;);          // hi leo
+f(&#39;hi&#39;, &#39;jack&#39;);  // hi jack
+f(&#39;hi&#39;, &#39;&#39;);      // hi leo</code></pre>
+<p><strong>注意:</strong></p>
+<ul>
+<li>参数变量是默认声明的，不能用<code>let</code>和<code>const</code>再次声明：<pre><code>function f (a = 1){
+  let a = 2; // error
+}</code></pre></li>
+<li>使用参数默认值时，参数名不能相同：<pre><code class="javaScript">function f (a, a, b){ ... };     // 不报错
+function f (a, a, b = 1){ ... }; // 报错</code></pre>
+</li>
+<li>与解构赋值默认值结合使用：<pre><code class="javaScript">function f ({a, b=1}){
+  console.log(a,b)
+};
+f({});         // undefined 1
+f({a:2});      // 2 1
+f({a:2, b:3}); // 2 3
+f();           // 报错
+function f ({a, b = 1} = {}){
+  console.log(a, b)
+}
+f();  // undefined 1</code></pre>
+</li>
+<li>尾参数定义默认值:<br>通常在尾参数定义默认值，便于观察参数，并且非尾参数无法省略。<pre><code class="javaScript">function f (a=1,b){
+  return [a, b];
+}
+f();    // [1, undefined]
+f(2);   // [2, undefined]
+f(,2);  // 报错
+f(undefined, 2);  // [1, 2]
+function f (a, b=1, c){
+  return [a, b, c];
+}
+f();        // [undefined, 1, undefined]
+f(1);       // [1,1,undefined]
+f(1, ,2);   // 报错
+f(1,undefined,2); // [1,1,2]</code></pre>
+</li>
+</ul>
+<p>在给参数传递默认值时，传入<code>undefined</code>会触发默认值，传入<code>null</code>不会触发。</p>
+<pre><code class="javaScript">function f (a = 1, b = 2){
+    console.log(a, b);
+}
+f(undefined, null); // 1 null</code></pre>
+<p><strong>函数的length属性:</strong></p>
+<p><code>length</code>属性将返回，没有指定默认值的参数数量，并且rest参数不计入<code>length</code>属性。</p>
+<pre><code class="javaScript">function f1 (a){...};
+function f2 (a=1){...};
+function f3 (a, b=2){...};
+function f4 (...a){...};
+function f5 (a,b,...c){...};
+
+f1.length; // 1
+f2.length; // 0
+f3.length; // 1
+f4.length; // 0
+f5.length; // 2</code></pre>
+<h3 id="6-2-rest-参数"><a href="#6-2-rest-参数" class="headerlink" title="6.2 rest 参数"></a>6.2 rest 参数</h3><p><code>rest</code>参数形式为（<code>...变量名</code>），其值为一个数组，用于获取函数多余参数。</p>
+<pre><code class="javaScript">function f (a, ...b){
+    console.log(a, b);
+}
+f(1,2,3,4); // 1 [2, 3, 4]</code></pre>
+<p><strong>注意：</strong></p>
+<ul>
+<li><code>rest</code>参数只能放在最后一个，否则报错：<pre><code class="javascript">function f(a, ...b, c){...}; // 报错 </code></pre>
+</li>
+<li>函数的<code>length</code>属性不包含<code>rest</code>参数。<pre><code class="javaScript">function f1 (a){...};
+function f2 (a,...b){...};
+f1(1);   // 1
+f2(1,2); // 1</code></pre>
+</li>
+</ul>
+<h3 id="6-3-name-属性"><a href="#6-3-name-属性" class="headerlink" title="6.3 name 属性"></a>6.3 name 属性</h3><p>用于返回该函数的函数名</p>
+<pre><code class="javaScript">function f (){...};
+f.name;    // f
+
+const f = function g(){...};
+f.name;    // g</code></pre>
+<h3 id="6-4-箭头函数"><a href="#6-4-箭头函数" class="headerlink" title="6.4 箭头函数"></a>6.4 箭头函数</h3><p>使用“箭头”(<code>=&gt;</code>)定义函数。<br><strong>基础使用</strong></p>
+<pre><code class="javaScript">// 有1个参数
+let f = v =&gt; v;
+// 等同于
+let f = function (v){return v};
+
+// 有多个参数
+let f = (v, i) =&gt; {return v + i};
+// 等同于
+let f = function (v, i){return v + i};
+
+// 没参数
+let f = () =&gt; 1;
+// 等同于
+let f = function (){return 1};</code></pre>
+<p><strong>箭头函数与变量结构结合使用：</strong></p>
+<pre><code class="javaScript">// 正常函数写法
+function f (p) {
+    return p.a + &#39;:&#39; + p.b;
+}
+
+// 箭头函数写法
+let f = ({a, b}) =&gt; a + &#39;:&#39; + b;</code></pre>
+<p><strong>简化回调函数：</strong></p>
+<pre><code class="javascript">// 正常函数写法
+[1, 2, 3].map(function (x){
+    return x * x;
+})
+
+
+// 箭头函数写法
+[1, 2, 3].map(x =&gt; x * x);</code></pre>
+<p><strong>箭头函数与rest参数结合：</strong></p>
+<pre><code class="javaScript">let f = (...n) =&gt; n;
+f(1, 2, 3); // [1, 2, 3]</code></pre>
+<p><strong>注意点：</strong></p>
+<ul>
+<li>1.箭头函数内的<code>this</code>总是指向<code>定义时所在的对象</code>，而不是调用时。</li>
+<li>2.箭头函数不能当做构造函数，即不能用<code>new</code>命令，否则报错。</li>
+<li>3.箭头函数不存在<code>arguments</code>对象，即不能使用，可以使用<code>rest</code>参数代替。</li>
+<li>4.箭头函数不能使用<code>yield</code>命令，即不能用作<code>Generator</code>函数。</li>
+</ul>
+<p><strong>不适用场景：</strong></p>
+<ul>
+<li>1.在定义函数方法，且该方法内部包含<code>this。</code><pre><code class="javaScript">const obj = {
+  a:9,
+  b: () =&gt; {
+      this.a --;
+  }
+}</code></pre>
+上述<code>b</code>如果是<code>普通函数</code>，函数内部的<code>this</code>指向<code>obj</code>，但是如果是箭头函数，则this会指向<code>全局</code>，不是预期结果。</li>
+<li>2.需要动态<code>this</code>时。<pre><code class="javaScript">let b = document.getElementById(&#39;myID&#39;);
+b.addEventListener(&#39;click&#39;, ()=&gt;{
+  this.classList.toggle(&#39;on&#39;);
+})</code></pre>
+上诉按钮点击会报错，因为<code>b</code>监听的箭头函数中，<code>this</code>是全局对象，若改成<code>普通函数</code>，<code>this</code>就会指向被点击的按钮对象。</li>
+</ul>
+<h3 id="6-5-双冒号运算符"><a href="#6-5-双冒号运算符" class="headerlink" title="6.5 双冒号运算符"></a>6.5 双冒号运算符</h3><p>双冒号暂时是一个提案，用于解决一些不适用的场合，取代<code>call、apply、bind</code>调用。<br>双冒号运算符(<code>::</code>)的左边是一个<strong>对象</strong>，右边是一个<strong>函数</strong>。该运算符会自动将左边的对象，作为上下文环境(即<code>this</code>对象)，绑定到右边函数上。</p>
+<pre><code class="javaScript">f::b;
+// 等同于
+b.bind(f);
+
+f::b(...arguments);
+// 等同于
+b.apply(f, arguments);</code></pre>
+<p>若双冒号左边为空，右边是一个对象的方法，则等于将该方法绑定到该对象上。</p>
+<pre><code class="javaScript">let f = a::a.b;
+// 等同于
+let f = ::a.b;</code></pre>
+<h2 id="7-数组的拓展"><a href="#7-数组的拓展" class="headerlink" title="7 数组的拓展"></a>7 数组的拓展</h2><h3 id="7-1-拓展运算符"><a href="#7-1-拓展运算符" class="headerlink" title="7.1 拓展运算符"></a>7.1 拓展运算符</h3><p>拓展运算符使用(<code>...</code>)，类似<code>rest</code>参数的逆运算，将数组转为用(<code>,</code>)分隔的参数序列。</p>
+<pre><code class="javaScript">console.log(...[1, 2, 3]);   // 1 2 3 
+console.log(1, ...[2,3], 4); // 1 2 3 4</code></pre>
+<p>拓展运算符主要使用在函数调用。</p>
+<pre><code class="javaScript">function f (a, b){
+    console.log(a, b);
+}
+f(...[1, 2]); // 1 2
+
+function g (a, b, c, d, e){
+    console.log(a, b, c, d, e);
+}
+g(0, ...[1, 2], 3, ...[4]); // 0 1 2 3 4</code></pre>
+<p>若拓展运算符后面是个空数组，则不产生效果</p>
+<pre><code class="javaScript">[...[], 1]; // [1]</code></pre>
+<p>替代apply方法</p>
+<pre><code class="javaScript">// ES6之前
+function f(a, b, c){...};
+var a = [1, 2, 3];
+f.apply(null, a);
+
+// ES6之后
+function f(a, b, c){...};
+let a = [1, 2, 3];
+f(...a);
+
+// ES6之前
+Math.max.apply(null, [3,2,6]);
+
+// ES6之后
+Math.max(...[3,2,6]);
+</code></pre>
+<p>拓展运算符的运用</p>
+<ul>
+<li>(1)复制数组：通常我们直接复制数组时，只是浅拷贝，如果要实现深拷贝，可以使用拓展运算符。<pre><code class="javaScript">// 通常情况 浅拷贝
+let a1 = [1, 2];
+let a2 = a1; 
+a2[0] = 3;
+console.log(a1,a2); // [3,2] [3,2]
+// 拓展运算符 深拷贝
+let a1 = [1, 2];
+let a2 = [...a1];
+// let [...a2] = a1; // 作用相同
+a2[0] = 3;
+console.log(a1,a2); // [1,2] [3,2]</code></pre>
+</li>
+<li>(2)合并数组：注意，这里合并数组，只是浅拷贝。<pre><code class="javaScript">let a1 = [1,2];
+let a2 = [3];
+let a3 = [4,5];
+// ES5 
+let a4 = a1.concat(a2, a3);
+// ES6
+let a5 = [...a1, ...a2, ...a3];
+a4[0] === a1[0]; // true
+a5[0] === a1[0]; // true</code></pre>
+</li>
+<li>(3)与解构赋值结合：与解构赋值结合生成数组，但是使用拓展运算符需要放到参数最后一个，否则报错。<pre><code class="javaScript">let [a, ...b] = [1, 2, 3, 4]; 
+// a =&gt; 1  b =&gt; [2,3,4]
+let [a, ...b] = [];
+// a =&gt; undefined b =&gt; []
+let [a, ...b] = [&quot;abc&quot;];
+// a =&gt; &quot;abc&quot;  b =&gt; []</code></pre>
+<h3 id="7-2-Array-from"><a href="#7-2-Array-from" class="headerlink" title="7.2 Array.from()"></a>7.2 Array.from()</h3>将 <code>类数组对象</code> 和<code>可遍历的对象</code>，转换成真正的数组。<pre><code class="javaScript">// 类数组对象
+let a = {
+  &#39;0&#39;:&#39;a&#39;,
+  &#39;1&#39;:&#39;b&#39;,
+  length:2
+}
+let arr = Array.from(a);
+// 可遍历的对象
+let a = Array.from([1,2,3]);
+let b = Array.from({length: 3});
+let c = Array.from([1,2,3]).map(x =&gt; x * x);
+let d = Array.from([1,2,3].map(x =&gt; x * x));</code></pre>
+<h3 id="7-3-Array-of"><a href="#7-3-Array-of" class="headerlink" title="7.3 Array.of()"></a>7.3 Array.of()</h3><pre><code class="javaScript">Array.of(1,2,3);    // [1,2,3]
+Array.of(1).length; // 1
+Array();       // []
+Array(2);      // [,] 1个参数时，为指定数组长度
+Array(1,2,3);  // [1,2,3] 多于2个参数，组成新数组</code></pre>
+<h3 id="7-4-find-和findIndex"><a href="#7-4-find-和findIndex" class="headerlink" title="7.4 find()和findIndex()"></a>7.4 find()和findIndex()</h3><code>find()</code>方法用于找出第一个符合条件的数组成员，参数为一个回调函数，所有成员依次执行该回调函数，返回第一个返回值为<code>true</code>的成员，如果没有一个符合则返回<code>undefined</code>。<pre><code class="javaScript">[1,2,3,4,5].find( a =&gt; a &lt; 3 ); // 1</code></pre>
+回调函数接收三个参数，当前值、当前位置和原数组。<pre><code class="javaScript">[1,2,3,4,5].find((value, index, arr) =&gt; {
+  // ...
+});</code></pre>
+<code>findIndex()</code>方法与<code>find()</code>类似，返回第一个符合条件的数组成员的位置，如果都不符合则返回<code>-1</code>。<pre><code class="javaScript">[1,2,3,4].findIndex((v,i,a)=&gt;{
+  return v&gt;2;
+}); // 2</code></pre>
+<h3 id="7-5-fill"><a href="#7-5-fill" class="headerlink" title="7.5 fill()"></a>7.5 fill()</h3>用于用指定值<strong>填充</strong>一个数组，通常用来<strong>初始化空数组</strong>，并抹去数组中已有的元素。<pre><code class="javaScript">new Array(3).fill(&#39;a&#39;);   // [&#39;a&#39;,&#39;a&#39;,&#39;a&#39;]
+[1,2,3].fill(&#39;a&#39;);        // [&#39;a&#39;,&#39;a&#39;,&#39;a&#39;]</code></pre>
+并且<code>fill()</code>的第二个和第三个参数指定填充的<code>起始位置和结束位置</code>。<pre><code class="javaScript">[1,2,3].fill(&#39;a&#39;,1,2);</code></pre>
+</li>
+</ul>
+<h3 id="7-6-entries-keys-values"><a href="#7-6-entries-keys-values" class="headerlink" title="7.6 entries(),keys(),values()"></a>7.6 entries(),keys(),values()</h3><p>主要用于遍历数组，entries()对键值对遍历，keys()对键名遍历，values()对键值遍历。</p>
+<pre><code class="javaScript">for (let i of [&#39;a&#39;, &#39;b&#39;].keys()){
+    console.log(i)
+}
+// 0
+// 1
+for (let e of [&#39;a&#39;, &#39;b&#39;].values()){
+    console.log(e)
+}
+// &#39;a&#39;
+// &#39;b&#39;
+for (let e of [&#39;a&#39;, &#39;b&#39;].entries()){
+    console.log(e)
+}
+// 0 &#39;a&#39;
+// 1 &#39;b&#39;</code></pre>
+<h3 id="7-7-includes"><a href="#7-7-includes" class="headerlink" title="7.7 includes()"></a>7.7 includes()</h3><p>用于表示数组是否包含给定的值，与字符串的<code>includes</code>方法类似。</p>
+<pre><code class="javaScript">[1,2,3].includes(2);     // true
+[1,2,3].includes(4);     // false
+[1,2,NaN].includes(NaN); // true</code></pre>
+<p>第二个参数为<code>起始位置</code>，默认为<code>0</code>，如果<code>负数</code>，则表示<code>倒数的位置</code>，如果大于数组长度，则重置为0开始。</p>
+<pre><code class="javaScript">[1,2,3].includes(3,3);    // false
+[1,2,3].includes(3,4);    // false
+[1,2,3].includes(3,-1);   // true
+[1,2,3].includes(3,-4);   // true
+</code></pre>
+<h3 id="7-8-flat-flatMap"><a href="#7-8-flat-flatMap" class="headerlink" title="7.8 flat(),flatMap()"></a>7.8 flat(),flatMap()</h3><p><code>flat()</code>用于将数组一维化，返回一个新数组，不影响原数组。<br>默认一次只一维化一层数组，若需多层，则传入一个整数参数指定层数。<br>若要一维化所有层的数组，则传入<code>Infinity</code>作为参数。</p>
+<pre><code class="javaScript">[1, 2, [2,3]].flat();        // [1,2,2,3]
+[1,2,[3,[4,[5,6]]]].flat(3); // [1,2,3,4,5,6]
+[1,2,[3,[4,[5,6]]]].flat(&#39;Infinity&#39;); // [1,2,3,4,5,6]</code></pre>
+<p><code>flatMap()</code>是将原数组每个对象先执行一个函数，在对返回值组成的数组执行<code>flat()</code>方法，返回一个新数组，不改变原数组。<br><code>flatMap()</code>只能展开一层。</p>
+<pre><code class="javaScript">[2, 3, 4].flatMap((x) =&gt; [x, x * 2]); 
+// [2, 4, 3, 6, 4, 8] </code></pre>
+<h2 id="8-对象的拓展"><a href="#8-对象的拓展" class="headerlink" title="8 对象的拓展"></a>8 对象的拓展</h2><h3 id="8-1-属性的简洁表示"><a href="#8-1-属性的简洁表示" class="headerlink" title="8.1 属性的简洁表示"></a>8.1 属性的简洁表示</h3><pre><code class="javaScript">let a = &#39;a1&#39;;
+let b = { a };  // b =&gt; { a : &#39;a1&#39; }
+// 等同于
+let b = { a : a };
+
+function f(a, b){
+    return {a, b}; 
+}
+// 等同于
+function f (a, b){
+    return {a:a ,b:b};
+}
+
+let a = {
+    fun () {
+        return &#39;leo&#39;;
+    }
+}
+// 等同于
+let a = {
+    fun : function(){
+        return &#39;leo&#39;;
+    }
+}
+</code></pre>
+<h3 id="8-2-属性名表达式"><a href="#8-2-属性名表达式" class="headerlink" title="8.2 属性名表达式"></a>8.2 属性名表达式</h3><p><code>JavaScript</code>提供2种方法定义对象的属性。</p>
+<pre><code class="javaScript">// 方法1 标识符作为属性名
+a.f = true;
+// 方法2 字符串作为属性名
+a[&#39;f&#39; + &#39;un&#39;] = true;
+</code></pre>
+<p>延伸出来的还有：</p>
+<pre><code class="javaScript">let a = &#39;hi leo&#39;;
+let b = {
+    [a]: true,
+    [&#39;a&#39;+&#39;bc&#39;]: 123,
+    [&#39;my&#39; + &#39;fun&#39;] (){
+        return &#39;hi&#39;;
+    }
+};
+// b.a =&gt; undefined ; b.abc =&gt; 123 ; b.myfun() =&gt; &#39;hi&#39;
+// b[a] =&gt; true ; b[&#39;abc&#39;] =&gt; 123 ; b[&#39;myfun&#39;] =&gt; ƒ [&#39;my&#39; + &#39;fun&#39;] (){ return &#39;hi&#39;; }</code></pre>
+<p><strong>注意：</strong><br>属性名表达式不能与简洁表示法同时使用，否则报错。</p>
+<pre><code class="javaScript">// 报错
+let a1 = &#39;aa&#39;;
+let a2 = &#39;bb&#39;;
+let b1 = {[a1]};
+// 正确
+let a1 = &#39;aa&#39;;
+let b1 = { [a1] : &#39;bb&#39;};</code></pre>
+<h3 id="8-3-Object-is"><a href="#8-3-Object-is" class="headerlink" title="8.3 Object.is()"></a>8.3 Object.is()</h3><p><code>Object.is()</code> 用于比较两个值是否严格相等，在ES5时候只要使用<code>相等运算符</code>(<code>==</code>)和严格相等运算符(<code>===</code>)就可以做比较，但是它们都有缺点，前者会<code>自动转换数据类型</code>，后者的NaN不等于自身，以及+0等于-0。</p>
+<pre><code class="javaScript">Object.is(&#39;a&#39;,&#39;a&#39;);   // true
+Object.is({}, {});    // false
+// ES5
++0 === -0 ;           // true
+NaN === NaN;          // false
+// ES6
+Object.is(+0,-0);     // false
+Object.is(NaN,NaN);   // true</code></pre>
+<h3 id="8-4-Object-assign"><a href="#8-4-Object-assign" class="headerlink" title="8.4 Object.assign()"></a>8.4 Object.assign()</h3><p><code>Object.assign()</code>方法用于对象的合并，将原对象的所有可枚举属性复制到目标对象。<br>基础用法：<br>第一个参数是目标对象，后面参数都是源对象。</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>ECMAScript2015</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-12-24, 00:00:00</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-26, 18:15:14</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/ECMAScript2015/" title="ECMAScript2015">http://yoursite.com/2019/12/24/ECMAScript2015/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#jQuery','#表格','#表单验证','#ECMAScript2015','#大前端','#CSS','#函数','#重学ES5','#对象 - 重学ES5','#Linux','#js获取鼠标选中的文字内容','#Desctructuring','#Docker','#React插件','#Template','#环境安装','#VIM','#工具类','#类 - 重学ES5','#数组 - 重学ES5',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
