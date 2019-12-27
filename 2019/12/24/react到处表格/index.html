@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:url" content="https://lijinhai255.github.io/categories/index.html">
 <meta property="og:site_name" content="阿海blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-12-25T08:10:00.000Z">
@@ -482,7 +482,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">按钮：</span><br><span class="line"> return (</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">Button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.downloadExcel&#125;</span>&gt;</span>导出Excel表格<span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">downloadExcel = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">const</span> data = <span class="keyword">this</span>.state.data ? <span class="keyword">this</span>.state.data : <span class="string">''</span>;<span class="comment">//表格数据</span></span><br><span class="line">  <span class="keyword">var</span> option=&#123;&#125;;</span><br><span class="line">  <span class="keyword">let</span> dataTable = [];</span><br><span class="line">  <span class="keyword">if</span> (data) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data) &#123;</span><br><span class="line">      <span class="keyword">if</span>(data)&#123;</span><br><span class="line">        <span class="keyword">let</span> obj = &#123;</span><br><span class="line">          <span class="string">'组织ID'</span>: data[i].id,</span><br><span class="line">          <span class="string">'组织代码'</span>: data[i].organization_code,</span><br><span class="line">          <span class="string">'组织名称'</span>: data[i].organization_name,</span><br><span class="line">        &#125;</span><br><span class="line">        dataTable.push(obj);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  option.fileName = <span class="string">'组织信息'</span></span><br><span class="line">  option.datas=[</span><br><span class="line">    &#123;</span><br><span class="line">      sheetData:dataTable,</span><br><span class="line">      sheetName:<span class="string">'sheet'</span>,</span><br><span class="line">      sheetFilter:[<span class="string">'组织ID'</span>,<span class="string">'组织代码'</span>,<span class="string">'组织名称'</span>],</span><br><span class="line">      sheetHeader:[<span class="string">'组织ID'</span>,<span class="string">'组织代码'</span>,<span class="string">'组织名称'</span>],</span><br><span class="line">    &#125;</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> toExcel = <span class="keyword">new</span> ExportJsonExcel(option); </span><br><span class="line">  toExcel.saveExcel();        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 976041476@qq.com </span>
     </div>
 </article>
 
@@ -498,7 +498,7 @@
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-24, 00:00:00</p>
     <p><span class="copy-title">最后更新:</span>2019-12-25, 18:19:46</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/" title="react到处表格">http://yoursite.com/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/</a>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/" title="react到处表格">https://lijinhai255.github.io/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -537,7 +537,8 @@
 <div class="shang_box">
     <a class="shang_close"  onclick="dashangToggle()">×</a>
     <div class="shang_tit">
-        <p>喜欢就点赞,疼爱就打赏</p>
+        <!-- <p>喜欢就点赞,疼爱就打赏</p> -->
+        <p>喜欢就加好友</p>
     </div>
     <div class="shang_payimg">
         <div class="pay_img">
@@ -546,7 +547,8 @@
         </div>
     </div>
     <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span> 
+        <!-- <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span> -->
     </div>
 </div>
 
