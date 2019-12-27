@@ -427,7 +427,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-27 15:03:15'>2019-12-24 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 15:06:48'>2019-12-24 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -1716,7 +1716,7 @@ let c2 = new Set([...a].filter(x =&gt; b.has(x))); // set {2,3}
 let c3 = new Set([...a].filter(x =&gt; !b.has(x))); // set {1}</code></pre>
 <ul>
 <li>遍历方法<blockquote>
-<p>keys()：返回键名的遍历器。<br>values()：返回键值的遍历器。<br>entries()：返回键值对的遍历器。<br>forEach()：使用回调函数遍历每个成员</p>
+<p>keys()：返回键名的遍历器。<br>values()：返回键值的遍历器。<br>entries()：返回键值对的遍历器。<br>forEach()：使用回调函数遍历每个成员<br><code>Set</code>遍历顺序是插入顺序，当保存多个回调函数，只需按照顺序调用。但由于Set结构<code>没有键名只有键值</code>，所以<code>keys()</code>和<code>values()</code>是返回结果相同。</p>
 </blockquote>
 </li>
 </ul>
@@ -1737,7 +1737,7 @@ let c3 = new Set([...a].filter(x =&gt; !b.has(x))); // set {1}</code></pre>
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-24, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-27, 15:03:15</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-27, 15:06:48</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/ECMAScript2015/" title="ECMAScript2015">https://lijinhai255.github.io/2019/12/24/ECMAScript2015/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
