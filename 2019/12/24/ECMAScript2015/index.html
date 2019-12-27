@@ -427,7 +427,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-27 14:56:19'>2019-12-24 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 15:03:15'>2019-12-24 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -1695,7 +1695,31 @@ a.clear();       // a =&gt; Set(0) {}</code></pre>
 <h3 id="10-2-Set的应用"><a href="#10-2-Set的应用" class="headerlink" title="10.2 Set的应用"></a>10.2 Set的应用</h3></li>
 </ul>
 <p><strong>数组去重：</strong></p>
-<pre><code class="javaScript"></code></pre>
+<pre><code class="javaScript">// 方法1
+[...new Set([1,2,3,4,4,4])]; // [1,2,3,4]
+// 方法2
+Array.from(new Set([1,2,3,4,4,4]));   // [1,2,3,4]</code></pre>
+<p><strong>遍历和过滤：</strong></p>
+<pre><code class="javaScript">let a = new Set([1,2,3,4]);
+// map 遍历操作
+let b = new Set([...a].map(x =&gt;x*2));// b =&gt; Set(4) {2,4,6,8}
+// filter 过滤操作
+let c = new Set([...a].filter(x =&gt;(x%2) == 0)); // b =&gt; Set(2) {2,4}</code></pre>
+<p><strong>获取并集、交集和差集：</strong></p>
+<pre><code class="javaScript">let a = new Set([1,2,3]);
+let b = new Set([4,3,2]);
+// 并集
+let c1 = new Set([...a, ...b]);  // Set {1,2,3,4}
+// 交集
+let c2 = new Set([...a].filter(x =&gt; b.has(x))); // set {2,3}
+// 差集
+let c3 = new Set([...a].filter(x =&gt; !b.has(x))); // set {1}</code></pre>
+<ul>
+<li>遍历方法<blockquote>
+<p>keys()：返回键名的遍历器。<br>values()：返回键值的遍历器。<br>entries()：返回键值对的遍历器。<br>forEach()：使用回调函数遍历每个成员</p>
+</blockquote>
+</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 976041476@qq.com </span>
@@ -1704,7 +1728,7 @@ a.clear();       // a =&gt; Set(0) {}</code></pre>
 
 
 <p>
-    <a  class="dashang" onclick="dashangToggle()">赏</a>
+    <a  class="dashang" onclick="dashangToggle()">加友</a>
 </p>
 
 
@@ -1713,7 +1737,7 @@ a.clear();       // a =&gt; Set(0) {}</code></pre>
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-24, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-27, 14:56:19</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-27, 15:03:15</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/ECMAScript2015/" title="ECMAScript2015">https://lijinhai255.github.io/2019/12/24/ECMAScript2015/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
