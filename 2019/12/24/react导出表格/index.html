@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>react到处表格 | 阿海blog</title>
+  <title>react导出表格 | 阿海blog</title>
   <meta name="keywords" content=" React插件 ">
-  <meta name="description" content="react到处表格 | 阿海blog">
+  <meta name="description" content="react导出表格 | 阿海blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="categories">
@@ -319,14 +319,6 @@
             <span class="post-date" title="2019-12-11 00:00:00">2019/12/11</span>
         </a>
         
-        <a  class="工具 "
-           href="/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/"
-           data-tag="React插件"
-           data-author="" >
-            <span class="post-title" title="react到处表格">react到处表格</span>
-            <span class="post-date" title="2019-12-24 00:00:00">2019/12/24</span>
-        </a>
-        
         <a  class=""
            href="/2019/12/02/svn%E6%8C%87%E4%BB%A4/"
            data-tag="大前端"
@@ -383,6 +375,14 @@
             <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
         </a>
         
+        <a  class="工具 "
+           href="/2019/12/24/react%E5%AF%BC%E5%87%BA%E8%A1%A8%E6%A0%BC/"
+           data-tag="React插件"
+           data-author="" >
+            <span class="post-title" title="react导出表格">react导出表格</span>
+            <span class="post-date" title="2019-12-24 00:00:00">2019/12/24</span>
+        </a>
+        
     </nav>
 </div>
     </div>
@@ -395,9 +395,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-react到处表格" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-react导出表格" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">react到处表格</h1>
+        <h1 class="article-title">react导出表格</h1>
     
     <div class="article-meta">
         
@@ -419,7 +419,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 18:19:46'>2019-12-24 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 11:55:15'>2019-12-24 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -457,10 +457,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="React-ant-design表格导出数据为EXCEL表格数据"><a href="#React-ant-design表格导出数据为EXCEL表格数据" class="headerlink" title="React ant design表格导出数据为EXCEL表格数据"></a><a href="https://segmentfault.com/a/1190000017261691" target="_blank" rel="noopener">React ant design表格导出数据为EXCEL表格数据</a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yarn安装-记得以管理员身份执行</span><br><span class="line">yarn add js-export-excel</span><br><span class="line"></span><br><span class="line">npm安装</span><br><span class="line">npm install js-export-excel</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ExportJsonExcel <span class="keyword">from</span> <span class="string">'js-export-excel'</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">按钮：</span><br><span class="line"> return (</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">Button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.downloadExcel&#125;</span>&gt;</span>导出Excel表格<span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">downloadExcel = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">const</span> data = <span class="keyword">this</span>.state.data ? <span class="keyword">this</span>.state.data : <span class="string">''</span>;<span class="comment">//表格数据</span></span><br><span class="line">  <span class="keyword">var</span> option=&#123;&#125;;</span><br><span class="line">  <span class="keyword">let</span> dataTable = [];</span><br><span class="line">  <span class="keyword">if</span> (data) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data) &#123;</span><br><span class="line">      <span class="keyword">if</span>(data)&#123;</span><br><span class="line">        <span class="keyword">let</span> obj = &#123;</span><br><span class="line">          <span class="string">'组织ID'</span>: data[i].id,</span><br><span class="line">          <span class="string">'组织代码'</span>: data[i].organization_code,</span><br><span class="line">          <span class="string">'组织名称'</span>: data[i].organization_name,</span><br><span class="line">        &#125;</span><br><span class="line">        dataTable.push(obj);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  option.fileName = <span class="string">'组织信息'</span></span><br><span class="line">  option.datas=[</span><br><span class="line">    &#123;</span><br><span class="line">      sheetData:dataTable,</span><br><span class="line">      sheetName:<span class="string">'sheet'</span>,</span><br><span class="line">      sheetFilter:[<span class="string">'组织ID'</span>,<span class="string">'组织代码'</span>,<span class="string">'组织名称'</span>],</span><br><span class="line">      sheetHeader:[<span class="string">'组织ID'</span>,<span class="string">'组织代码'</span>,<span class="string">'组织名称'</span>],</span><br><span class="line">    &#125;</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> toExcel = <span class="keyword">new</span> ExportJsonExcel(option); </span><br><span class="line">  toExcel.saveExcel();        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="React-ant-design表格导出数据为EXCEL表格数据"><a href="#React-ant-design表格导出数据为EXCEL表格数据" class="headerlink" title="React ant design表格导出数据为EXCEL表格数据"></a><a href="https://segmentfault.com/a/1190000017261691" target="_blank" rel="noopener">React ant design表格导出数据为EXCEL表格数据</a></h1><pre><code>yarn安装-记得以管理员身份执行
+yarn add js-export-excel
+
+npm安装
+npm install js-export-excel</code></pre><pre><code class="js">import ExportJsonExcel from &#39;js-export-excel&#39;;</code></pre>
+<pre><code class="html">按钮：
+ return (
+    &lt;div&gt;
+       &lt;Button onClick={this.downloadExcel}&gt;导出Excel表格&lt;/Button&gt;
+    &lt;/div&gt;
+)</code></pre>
+<pre><code class="js">downloadExcel = () =&gt; {
+const data = this.state.data ? this.state.data : &#39;&#39;;//表格数据
+  var option={};
+  let dataTable = [];
+  if (data) {
+    for (let i in data) {
+      if(data){
+        let obj = {
+          &#39;组织ID&#39;: data[i].id,
+          &#39;组织代码&#39;: data[i].organization_code,
+          &#39;组织名称&#39;: data[i].organization_name,
+        }
+        dataTable.push(obj);
+      }
+    }
+  }
+  option.fileName = &#39;组织信息&#39;
+  option.datas=[
+    {
+      sheetData:dataTable,
+      sheetName:&#39;sheet&#39;,
+      sheetFilter:[&#39;组织ID&#39;,&#39;组织代码&#39;,&#39;组织名称&#39;],
+      sheetHeader:[&#39;组织ID&#39;,&#39;组织代码&#39;,&#39;组织名称&#39;],
+    }
+  ];
+
+  var toExcel = new ExportJsonExcel(option); 
+  toExcel.saveExcel();        
+}</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 976041476@qq.com </span>
     </div>
@@ -473,12 +510,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>react到处表格</p>
+    <p><span class="copy-title">文章标题:</span>react导出表格</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-24, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-25, 18:19:46</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/" title="react到处表格">https://lijinhai255.github.io/2019/12/24/react%E5%88%B0%E5%A4%84%E8%A1%A8%E6%A0%BC/</a>
+    <p><span class="copy-title">最后更新:</span>2019-12-27, 11:55:15</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/24/react%E5%AF%BC%E5%87%BA%E8%A1%A8%E6%A0%BC/" title="react导出表格">https://lijinhai255.github.io/2019/12/24/react%E5%AF%BC%E5%87%BA%E8%A1%A8%E6%A0%BC/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
