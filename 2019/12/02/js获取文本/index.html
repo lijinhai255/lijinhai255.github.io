@@ -21,7 +21,7 @@
 
 <link href="/css/style.css?v=1.0.1" rel="stylesheet">
 
-<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
 
 <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -439,7 +439,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 17:59:54'>2019-12-02 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 10:59:28'>2019-12-02 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -477,8 +477,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="js获取鼠标选中的文字内容"><a href="#js获取鼠标选中的文字内容" class="headerlink" title="js获取鼠标选中的文字内容"></a>js获取鼠标选中的文字内容</h1><h2 id="1、获取选中的文字："><a href="#1、获取选中的文字：" class="headerlink" title="1、获取选中的文字："></a>1、获取选中的文字：</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.selection.createRange().text; IE9以下使用</span><br><span class="line"></span><br><span class="line"><span class="built_in">window</span>.getSelection().toString(); 其他浏览器使用</span><br><span class="line"></span><br><span class="line">$(<span class="string">'p'</span>).mouseup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> txt = <span class="built_in">window</span>.getSelection?<span class="built_in">window</span>.getSelection():<span class="built_in">document</span>.selection.createRange().text;</span><br><span class="line">    alert(txt) ;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="2、取消处于选中状态的文字："><a href="#2、取消处于选中状态的文字：" class="headerlink" title="2、取消处于选中状态的文字："></a>2、取消处于选中状态的文字：</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.selection.empty(); IE9以下使用</span><br><span class="line"></span><br><span class="line"><span class="built_in">window</span>.getSelection().removeAllRanges(); 其他浏览器使用</span><br><span class="line"></span><br><span class="line">$(<span class="string">'p'</span>).mouseup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.getSelection ? <span class="built_in">window</span>.getSelection().removeAllRanges() : <span class="built_in">document</span>.selection.empty();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+        <h1 id="js获取鼠标选中的文字内容"><a href="#js获取鼠标选中的文字内容" class="headerlink" title="js获取鼠标选中的文字内容"></a>js获取鼠标选中的文字内容</h1><h2 id="1、获取选中的文字："><a href="#1、获取选中的文字：" class="headerlink" title="1、获取选中的文字："></a>1、获取选中的文字：</h2><pre><code class="javaScript">
+document.selection.createRange().text; IE9以下使用
+
+window.getSelection().toString(); 其他浏览器使用
+
+$(&#39;p&#39;).mouseup(function(){
+    var txt = window.getSelection?window.getSelection():document.selection.createRange().text;
+    alert(txt) ;
+})</code></pre>
+<h2 id="2、取消处于选中状态的文字："><a href="#2、取消处于选中状态的文字：" class="headerlink" title="2、取消处于选中状态的文字："></a>2、取消处于选中状态的文字：</h2><pre><code class="javaScript">document.selection.empty(); IE9以下使用
+
+window.getSelection().removeAllRanges(); 其他浏览器使用
+
+$(&#39;p&#39;).mouseup(function(){
+    window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+})</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -495,7 +510,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-02, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-25, 17:59:54</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-27, 10:59:28</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/02/js%E8%8E%B7%E5%8F%96%E6%96%87%E6%9C%AC/" title="js获取文本">http://yoursite.com/2019/12/02/js%E8%8E%B7%E5%8F%96%E6%96%87%E6%9C%AC/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -646,7 +661,7 @@
         border-right: 1px solid #C3CCD0;
         text-align: right;
         color: #AAA;
-        background-color: ;
+        background-color: #fafafa;
     }
     .pre-numbering.widther {
         width: 35px;

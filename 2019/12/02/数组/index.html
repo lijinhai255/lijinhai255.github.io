@@ -21,7 +21,7 @@
 
 <link href="/css/style.css?v=1.0.1" rel="stylesheet">
 
-<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
 
 <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -439,7 +439,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 18:20:05'>2019-12-02 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 10:58:37'>2019-12-02 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -478,27 +478,66 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="数组中遍历的方法"><a href="#数组中遍历的方法" class="headerlink" title="数组中遍历的方法"></a>数组中遍历的方法</h1><p>在 ES6 中新增了很多实用的原生 API，方便开发者对 Array 的操控性更强，如 for…of、from、of、fill、find、findIndex等。</p>
-<h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><pre><code>看这个名字就知道这个语法是用来遍历数组的，我们简单回忆下原始的数组遍历方法是怎样的？</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(array[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><pre><code>看这个名字就知道这个语法是用来遍历数组的，我们简单回忆下原始的数组遍历方法是怎样的？</code></pre><pre><code class="javaScript">
+for (var i = 0; i &lt; array.length; i++) {
+  console.log(array[i]);
+}</code></pre>
 <p>后来语法有所升级，到 ES5 遍历数组的 API 多了起来，其中有 forEach、every、filter等，同样的功能可以用 forEach 或者 every 来实现。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">array.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">array.forEach(function(i){
+  console.log(i);
+})</code></pre>
 <p>这个语法看起来要简洁很多，不需要通过索引去访问数组项，然而它的缺点也是很明显，不支持 break、continue 等。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>].forEach(<span class="function"><span class="keyword">function</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(i===<span class="number">2</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">[1,2,3,4,5].forEach(function(i){
+  if(i===2){
+    return;
+  }else{
+    console.log(i)
+  }
+})</code></pre>
 <p>这段代码的”本意”是从第一个元素开始遍历，遇到数组项 2 之后就结束遍历，不然打印出所遍历过的数值项。可是，事实让你大跌眼镜，因为它的输出是 1,3,4,5</p>
 <blockquote>
 <p>[!DANGER]<br>forEach 的代码块中不能使用 break、continue，它会抛出异常。</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>].every(<span class="function"><span class="keyword">function</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(i===<span class="number">2</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i)</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">arr.every(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(item===<span class="number">2</span>)&#123;</span><br><span class="line"></span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(item)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">arr.every(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(item===<span class="number">2</span>)&#123;</span><br><span class="line"></span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(item)</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">[1,2,3,4,5].every(function(i){
+  if(i===2){
+    return false;
+  }else{
+    console.log(i)
+    return true
+  }
+})</code></pre>
+<pre><code class="javaScript">arr.every(function(){
+    if(item===2){
 
+    }else{
+        console.log(item)
+    }
+})</code></pre>
+<pre><code class="javaScript">arr.every(function(){
+  if(item===2){
+
+  }else{
+    console.log(item)
+
+  }
+  return true
+})</code></pre>
 <p>同样完成刚才的目标，使用 every 遍历就可以做到 break 那样的效果，简单的说 return false 等同于 break，return true 等同于 continue。如果不写，默认是 return false。</p>
 <blockquote>
 <p>[!DANGER]<br>every 的代码块中不能使用 break、continue，它会抛出异常。</p>
 </blockquote>
 <h2 id="for…in…"><a href="#for…in…" class="headerlink" title="for…in…"></a>for…in…</h2><p>是为对象设计 如果arr.a =8 会打印出 a和 8 a变成了索引</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> index <span class="keyword">in</span> array) &#123;</span><br><span class="line">  <span class="keyword">if</span>(index ===<span class="number">2</span>)&#123;</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">console</span>.log(array[index]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">for (var index in array) {
+  if(index ===2){
+    continue
+  }
+  console.log(array[index]);
+}</code></pre>
 <p>注意：for…in… 是支持continue和break 但是注意的是 index 是字符串 而不是数字</p>
-<h2 id="for…of…"><a href="#for…of…" class="headerlink" title="for…of…"></a>for…of…</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> val <span class="keyword">of</span> [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(val);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1,2,3</span></span><br></pre></td></tr></table></figure>
+<h2 id="for…of…"><a href="#for…of…" class="headerlink" title="for…of…"></a>for…of…</h2><pre><code class="javaScript">for (let val of [1,2,3]) {
+  console.log(val);
+}
+// 1,2,3</code></pre>
 <p>····javaScript<br>const Price = {<br>  A: [1.5, 2.3, 4.5],<br>  B: [3, 4, 5],<br>  C: [0.5, 0.8, 1.2]<br>}<br>for(let key in Price){<br>  console.log(key,Price[key])<br>}<br>····<br>然后给这个数据结构自定义遍历规则(Iterator)，希望对这个遍历之后可以输出 1.5、3、0.5。（先不要关心 Iterator 是怎么实现的，ES6的新增语法，后面会讲）。</p>
 <p>面对这样的数据结构，for、forEach、every、for…in 都无能为力吧？使用 for…of 就木有问题，它就是为解决这种问题而生。</p>
 <blockquote>
@@ -508,9 +547,12 @@
 <blockquote>
 <p>伪数组转换成数组的方法<br>数组是开发中经常用到的数据结构，它非常好用。在 JavaScript 的世界里有些对象被理解为数组，然而缺不能使用数组的原生 API，比如函数中的 arguments、DOM中的 NodeList等。当然，还有一些可遍历的对象，看上去都像数组却不能直接使用数组的 API，因为它们是伪数组（Array-Like）。要想对这些对象使用数组的 API 就要想办法把它们转化为数组，传统的做法是这样的：</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> args = [].slice.call(<span class="built_in">arguments</span>);<span class="comment">// collection</span></span><br><span class="line"><span class="keyword">let</span> imgs = [].slice.call(<span class="built_in">document</span>.querySelectorAll(<span class="string">'img'</span>));<span class="comment">// nodelist</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let args = [].slice.call(arguments);// collection
+let imgs = [].slice.call(document.querySelectorAll(&#39;img&#39;));// nodelist</code></pre>
 <p>基本原理是使用 call 将数组的 api 应用在新的对象上，换句话说是利用改变函数的上下文来间接使用数组的 api。在 ES6 中提供了新的 api 来解决这个问题，就是 Array.from，代码如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> args = <span class="built_in">Array</span>.from(<span class="built_in">arguments</span>);</span><br><span class="line"><span class="keyword">let</span> imgs = <span class="built_in">Array</span>.from(<span class="built_in">document</span>.querySelectorAll(<span class="string">'img'</span>));<span class="comment">// nodelist</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">let args = Array.from(arguments);
+let imgs = Array.from(document.querySelectorAll(&#39;img&#39;));// nodelist
+</code></pre>
 <blockquote>
 <p>[!TIP]<br>伪数组具备两个特征，1. 按索引方式储存数据 2. 具有length属性；如：<br>let arrLike = {<br>0: ‘a’,<br>1: ‘b’,<br>2: ‘c’,<br>length: 3<br>}</p>
 </blockquote>
@@ -539,21 +581,32 @@
 </tr>
 </tbody></table>
 <p>看了这几个参数至少能看到 Array.from 还具备 map 的功能，比如我们想初始化一个长度为 5 的数组，每个数组元素默认为 1，之前的做法是这样的：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = <span class="built_in">Array</span>(<span class="number">6</span>).join(<span class="string">' '</span>).split(<span class="string">''</span>).map(<span class="function"><span class="params">item</span>=&gt;</span><span class="number">1</span>)</span><br><span class="line"><span class="comment">// [1,1,1,1,1]</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let arr = Array(6).join(&#39; &#39;).split(&#39;&#39;).map(item=&gt;1)
+// [1,1,1,1,1]</code></pre>
 <p>这样写虽然也能实现，但是用起来比较繁琐，使用 Array.from 就会简洁很多。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.from(&#123; <span class="attr">length</span>: <span class="number">5</span> &#125;, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="number">1</span> &#125;)</span><br><span class="line"><span class="built_in">Array</span>.from(&#123;<span class="attr">length</span>:<span class="number">5</span>&#125;,()=&gt;<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="如何创建新数组"><a href="#如何创建新数组" class="headerlink" title="如何创建新数组"></a>如何创建新数组</h2><h3 id="ES5"><a href="#ES5" class="headerlink" title="ES5"></a>ES5</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = <span class="built_in">Array</span>(<span class="number">5</span>);</span><br><span class="line"><span class="keyword">let</span> array = [<span class="string">''</span>,<span class="string">''</span>]</span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">Array.from({ length: 5 }, function () { return 1 })
+Array.from({length:5},()=&gt;1)</code></pre>
+<h2 id="如何创建新数组"><a href="#如何创建新数组" class="headerlink" title="如何创建新数组"></a>如何创建新数组</h2><h3 id="ES5"><a href="#ES5" class="headerlink" title="ES5"></a>ES5</h3><pre><code class="javaScript">let array = Array(5);
+let array = [&#39;&#39;,&#39;&#39;]
+</code></pre>
 <h3 id="Array"><a href="#Array" class="headerlink" title="Array."></a>Array.</h3><p>Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。</p>
 <p>Array.of() 和 Array 构造函数之间的区别在于处理整数参数：Array.of(7) 创建一个具有单个元素 7 的数组，而 Array(7) 创建一个长度为7的空数组（注意：这是指一个有7个空位(empty)的数组，而不是由7个undefined组成的数组）。<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/of" target="_blank" rel="noopener">Array.of</a></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.of(<span class="number">7</span>);       <span class="comment">// [7]</span></span><br><span class="line"><span class="built_in">Array</span>.of(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// [1, 2, 3]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Array</span>(<span class="number">7</span>);          <span class="comment">// [ , , , , , , ]</span></span><br><span class="line"><span class="built_in">Array</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);    <span class="comment">// [1, 2, 3]</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">Array.of(7);       // [7]
+Array.of(1, 2, 3); // [1, 2, 3]
 
+Array(7);          // [ , , , , , , ]
+Array(1, 2, 3);    // [1, 2, 3]
+</code></pre>
 <p>语法：<code>Array.of(element0[, element1[, …[, elementN]]])</code><br>参数 | 含义 | 必选<br>———— | ————-  | ————-<br>elementN | 任意个参数，将按顺序成为返回数组中的元素 | Y</p>
 <h3 id="Array-prototype-fill"><a href="#Array-prototype-fill" class="headerlink" title="Array.prototype.fill"></a>Array.prototype.fill</h3><p>fill() 方法用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">array.fill(<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="comment">// [1,0,3,4]</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let array = [1, 2, 3, 4]
+array.fill(0, 1, 2)
+// [1,0,3,4]</code></pre>
 <p>这个操作是将 array 数组的第二个元素（索引为1）到第三个元素（索引为2）内的数填充为 0，不包括第三个元素，所以结果是 [1,0,3,4]</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = <span class="built_in">Array</span>(<span class="number">5</span>).fill(<span class="number">1</span>)</span><br><span class="line"><span class="built_in">console</span>.log(array)</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="built_in">console</span>.log(arr.fill(<span class="number">8</span>,<span class="number">2</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let array = Array(5).fill(1)
+console.log(array)</code></pre>
+<pre><code class="javaScript">let arr = [1,2,3,4,5]
+console.log(arr.fill(8,2,4))</code></pre>
 <blockquote>
 <p>[!TIP]<br>fill 不具备遍历的功能，它是通过指定要操作的索引范围来进行，通过这道题目可以看出不指定索引会对所有元素进行操作</p>
 </blockquote>
@@ -583,12 +636,28 @@
 </tr>
 </tbody></table>
 <h2 id="ES5中如何查找元素"><a href="#ES5中如何查找元素" class="headerlink" title="ES5中如何查找元素"></a>ES5中如何查找元素</h2><h3 id="Array-prototype-find"><a href="#Array-prototype-find" class="headerlink" title="Array.prototype.find()"></a>Array.prototype.find()</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/find" target="_blank" rel="noopener">Array.prototype.find()</a><br>find() 方法返回数组中满足提供的测试函数的第一个元素的值，否则返回 undefined。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="number">5</span>, <span class="number">12</span>, <span class="number">8</span>, <span class="number">130</span>, <span class="number">44</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> found = array.find(<span class="function"><span class="keyword">function</span>(<span class="params">element</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> element &gt; <span class="number">10</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(found);</span><br><span class="line"><span class="comment">// 12</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let array = [5, 12, 8, 130, 44];
+
+let found = array.find(function(element) {
+  return element &gt; 10;
+});
+
+console.log(found);
+// 12</code></pre>
 <p>语法：<code>arr.find(callback[, thisArg])</code><br>参数 | 含义 | 必选<br>———— | ————-  | ————-<br>callback | 在数组每一项上执行的函数，接收 3 个参数，element、index、array | Y<br>thisArg | 执行回调时用作 this 的对象     | N</p>
 <h3 id="Array-filter"><a href="#Array-filter" class="headerlink" title="Array.filter"></a>Array.filter</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener">Array.filter</a></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">6</span>]</span><br><span class="line"><span class="keyword">let</span> find = array.filter(<span class="function">(<span class="params">item</span>)=&gt;</span> item%<span class="number">2</span> ===<span class="number">0</span>)</span><br><span class="line"><span class="built_in">console</span>.log(find)</span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let array = [1,2,3,4,6]
+let find = array.filter((item)=&gt; item%2 ===0)
+console.log(find)</code></pre>
 <h3 id="Array-prototype-findIndex"><a href="#Array-prototype-findIndex" class="headerlink" title="Array.prototype.findIndex()"></a>Array.prototype.findIndex()</h3><p>findIndex()方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。其实这个和 find() 是成对的，不同的是它返回的是索引而不是值。<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex" target="_blank" rel="noopener">Array.prototype.findIndex()</a></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [<span class="number">5</span>, <span class="number">12</span>, <span class="number">8</span>, <span class="number">130</span>, <span class="number">44</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> found = array.find(<span class="function"><span class="keyword">function</span>(<span class="params">element</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> element &gt; <span class="number">10</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(found);</span><br><span class="line"><span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<pre><code class="javaScript">let array = [5, 12, 8, 130, 44];
+
+let found = array.find(function(element) {
+  return element &gt; 10;
+});
+
+console.log(found);
+// 1</code></pre>
 <p>语法：<code>arr.findIndex(callback[, thisArg])</code><br>参数 | 含义 | 必选<br>———— | ————-  | ————-<br>callback | 在数组每一项上执行的函数，接收 3 个参数，element、index、array | Y<br>thisArg | 执行回调时用作 this 的对象     | N</p>
 
       
@@ -607,7 +676,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-02, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-25, 18:20:05</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-27, 10:58:37</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/02/%E6%95%B0%E7%BB%84/" title="数组">http://yoursite.com/2019/12/02/%E6%95%B0%E7%BB%84/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -758,7 +827,7 @@
         border-right: 1px solid #C3CCD0;
         text-align: right;
         color: #AAA;
-        background-color: ;
+        background-color: #fafafa;
     }
     .pre-numbering.widther {
         width: 35px;
