@@ -433,7 +433,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 17:49:11'>2019-12-02 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 10:37:44'>2019-12-02 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -473,12 +473,18 @@
       
         <h1 id="网格布局"><a href="#网格布局" class="headerlink" title="网格布局"></a>网格布局</h1><h2 id="CSS网格布局简介"><a href="#CSS网格布局简介" class="headerlink" title="CSS网格布局简介"></a>CSS网格布局简介</h2><p><code>table=&gt; float=&gt; position=&gt; inlne=&gt; FlexBox=&gt; Grid</code></p>
 <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="容器-Grid-Container"><a href="#容器-Grid-Container" class="headerlink" title="容器 Grid Container"></a>容器 Grid Container</h3><p>采用网格布局的区域，称为”容器”（container）。容器内部采用网格定位的子元素，称为”项目”（item）。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>1<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>2<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>3<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:grid</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<pre><code class="css">.container{
+  display:grid
+}</code></pre>
 <p>上面代码中，最外层的<div>元素就是容器，内层的三个<div>元素就是项目。</p>
 <p>注意：项目只能是容器的顶层子元素，不包含项目的子元素，比如上面代码的<p>元素就不是项目。Grid 布局只对项目生效。</p>
 <h3 id="项目-Grid-Item"><a href="#项目-Grid-Item" class="headerlink" title="项目 Grid Item"></a>项目 Grid Item</h3><h3 id="网格线-Grid-Line"><a href="#网格线-Grid-Line" class="headerlink" title="网格线 Grid Line"></a>网格线 Grid Line</h3><p>划分网格的线，称为”网格线”（grid line）。水平网格线划分出行，垂直网格线划分出列。</p>
-<p>正常情况下，n行有n + 1根水平网格线，m列有m + 1根垂直网格线，比如三行就有四根水平网格线。<br><img src="../static/1_bg2019032503.png" alt="tp"></p>
+<p>正常情况下，n行有n + 1根水平网格线，m列有m + 1根垂直网格线，比如三行就有四根水平网格线。<br><img src="/static/1_bg2019032503.png" alt="tp"></p>
 <h3 id="网格轨道-Grid-Track"><a href="#网格轨道-Grid-Track" class="headerlink" title="网格轨道  Grid Track"></a>网格轨道  Grid Track</h3><p>两个相邻的网格线之间为网格轨道</p>
 <h3 id="网格单元-Grid-Cell"><a href="#网格单元-Grid-Cell" class="headerlink" title="网格单元 Grid Cell"></a>网格单元 Grid Cell</h3><p>两个 相邻的列网格线和两个相邻的行网格线组成的是网格单元</p>
 <h3 id="网格区域-Grid-Area"><a href="#网格区域-Grid-Area" class="headerlink" title="网格区域 Grid Area"></a>网格区域 Grid Area</h3><p>四个网格线包围的总空间</p>
@@ -491,38 +497,61 @@
 <h3 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h3><h4 id="display"><a href="#display" class="headerlink" title="display"></a>display</h4><p><strong>注意</strong> 当元素设置网格布局，column 、float 、 clear 、 vertical-align属性无效<br>display:subgrid 目前所有浏览器都不兼容</p>
 <p><code>display:grid|inline-grid|subgrid</code></p>
 <p>将元素定义为<code>grid container</code>,并为其内容建立新的网格格式化上下文(grid formatting context)</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:grid<span class="comment">/*块级网格*/</span> | inline-grid <span class="comment">/*行内网格*/</span>| <span class="built_in">subgrid</span>(如果网格容器本身是</span><br><span class="line">  网格项(嵌套网格容器)，此属性用来继承其父网格容器的列行大小)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;5&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<pre><code class="css">.container{
+  display:grid/*块级网格*/ | inline-grid /*行内网格*/| subgrid(如果网格容器本身是
+  网格项(嵌套网格容器)，此属性用来继承其父网格容器的列行大小)
+}</code></pre>
 <h4 id="grid-template"><a href="#grid-template" class="headerlink" title="grid-template"></a>grid-template</h4><blockquote>
 <p>grid-template-columns/ grid-template-rows  使用以空格分割多个值来定义网格的列和行</p>
 </blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>:&lt;track-size&gt;....| &lt;line-name&gt; &lt;track-size&gt;...</span><br><span class="line">  grid-template-row:&lt;track-size&gt;....| &lt;line-name&gt; &lt;track-size&gt;...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="css">.container{
+  grid-template-columns:&lt;track-size&gt;....| &lt;line-name&gt; &lt;track-size&gt;...
+  grid-template-row:&lt;track-size&gt;....| &lt;line-name&gt; &lt;track-size&gt;...;
+}</code></pre>
 <h5 id="属性值"><a href="#属性值" class="headerlink" title="属性值"></a>属性值</h5><ul>
 <li>轨道大小(track-size): 可以使用css长度(px em等) 、百分比或用百分比（用fr单位）</li>
 </ul>
-<p><img src="../static/Xnip2019-12-20_14-09-44.jpeg" alt="tp"></p>
+<p><img src="/static/Xnip2019-12-20_14-09-44.jpeg" alt="tp"></p>
 <ul>
 <li>网格线名称(line-name) :可以选择任何名字</li>
 </ul>
-<p><img src="../static/1576823538820.jpg" alt="tp1"></p>
+<p><img src="/static/1576823538820.jpg" alt="tp1"></p>
 <h4 id="grid-template-areas"><a href="#grid-template-areas" class="headerlink" title="grid-template-areas"></a>grid-template-areas</h4><p>通过引用 grid-area  属性 指定网络区域的名称来定义网络模版。</p>
 <ul>
 <li><grid-area-name>: 使用grid-area属性设置的网格区域名称</li>
 <li>“.”:点号表示一个空网格单元</li>
 <li>none ： 没有定义的网格区域</li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">grid-template-areas</span>:none |</span><br><span class="line">  <span class="string">"grid-area-name|.grid-area-name|.grid-area-name|. ..."</span></span><br><span class="line">   <span class="string">"grid-area-name|.grid-area-name|.grid-area-name|. ..."</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="../static/Xnip2019-12-20_14-40-13.jpeg" alt="ti"><br><img src="../static/Xnip2019-12-20_14-49-36.jpeg" alt="tu1"><br><img src="../static/Xnip2019-12-20_15-42-26.jpeg" alt="tu2"></p>
-<h5 id="grid-template-1"><a href="#grid-template-1" class="headerlink" title="grid-template"></a>grid-template</h5><p><img src="../static/Xnip2019-12-20_15-53-30.jpeg" alt="tu1"></p>
+<pre><code class="css">.container{
+  grid-template-areas:none |
+  &quot;grid-area-name|.grid-area-name|.grid-area-name|. ...&quot;
+   &quot;grid-area-name|.grid-area-name|.grid-area-name|. ...&quot;
+}</code></pre>
+<p><img src="/static/Xnip2019-12-20_14-40-13.jpeg" alt="ti"><br><img src="/static/Xnip2019-12-20_14-49-36.jpeg" alt="tu1"><br><img src="/static/Xnip2019-12-20_15-42-26.jpeg" alt="tu2"></p>
+<h5 id="grid-template-1"><a href="#grid-template-1" class="headerlink" title="grid-template"></a>grid-template</h5><p><img src="/static/Xnip2019-12-20_15-53-30.jpeg" alt="tu1"></p>
 <h4 id="gap"><a href="#gap" class="headerlink" title="gap"></a>gap</h4><p><strong>grid-column-gap/grid-row-gap</strong> 指定网格线的大小，可以想象设置列/行之间的间距的宽度</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">grid-column-gap</span>:&lt;linr-size&gt;;</span><br><span class="line">  <span class="attribute">grid-row-gap</span>:&lt;line-size&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="../static/Xnip2019-12-20_16-30-10.jpeg" alt="tp1"></p>
-<h5 id="属性值-line-size"><a href="#属性值-line-size" class="headerlink" title="属性值 line-size"></a>属性值 line-size</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">grid-column-gap</span>:<span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">grid-row-gap</span>:<span class="number">15px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="../static/Xnip2019-12-20_16-36-27.jpeg" alt="gap"><br><img src="../static/Xnip2019-12-20_16-42-15.jpeg" alt="gap"><br><img src="../static/Xnip2019-12-20_16-45-36.jpeg" alt="gap"></p>
-<h4 id="items"><a href="#items" class="headerlink" title="items"></a>items</h4><h5 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h5><p><img src="../static/Xnip2019-12-20_16-48-05.jpeg" alt="items"></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">justify-items</span>:start| end| center| stretch ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="../static/Xnip2019-12-20_16-50-14.jpeg" alt="ru"><br><img src="../static/Xnip2019-12-20_16-52-57.jpeg" alt="tp2"></p>
+<pre><code class="css">.container{
+  grid-column-gap:&lt;linr-size&gt;;
+  grid-row-gap:&lt;line-size&gt;;
+}</code></pre>
+<p><img src="/static/Xnip2019-12-20_16-30-10.jpeg" alt="tp1"></p>
+<h5 id="属性值-line-size"><a href="#属性值-line-size" class="headerlink" title="属性值 line-size"></a>属性值 line-size</h5><pre><code class="css">.container{
+  grid-column-gap:10px;
+  grid-row-gap:15px;
+}</code></pre>
+<p><img src="/static/Xnip2019-12-20_16-36-27.jpeg" alt="gap"><br><img src="/static/Xnip2019-12-20_16-42-15.jpeg" alt="gap"><br><img src="/static/Xnip2019-12-20_16-45-36.jpeg" alt="gap"></p>
+<h4 id="items"><a href="#items" class="headerlink" title="items"></a>items</h4><h5 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h5><p><img src="/static/Xnip2019-12-20_16-48-05.jpeg" alt="items"></p>
+<pre><code class="css">.container{
+  justify-items:start| end| center| stretch ;
+}</code></pre>
+<p><img src="/static/Xnip2019-12-20_16-50-14.jpeg" alt="ru"><br><img src="/static/Xnip2019-12-20_16-52-57.jpeg" alt="tp2"></p>
 <h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><h4 id="grid-auto"><a href="#grid-auto" class="headerlink" title="grid-auto"></a>grid-auto</h4>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -540,7 +569,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-02, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-25, 17:49:11</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-27, 10:37:44</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/lijinhai255/github.io/2019/12/02/grid/" title="grid">https://lijinhai255.github.io/lijinhai255.github.io/2019/12/02/grid/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
