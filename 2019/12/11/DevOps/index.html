@@ -459,7 +459,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-29 13:41:21'>2019-12-11 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-29 14:40:36'>2019-12-11 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -499,8 +499,21 @@
       
         <h1 id="DevOps内容介绍"><a href="#DevOps内容介绍" class="headerlink" title="DevOps内容介绍"></a>DevOps内容介绍</h1><p><img src="/images/1577592770443.jpg" alt="tp"></p>
 <h2 id="Git基础"><a href="#Git基础" class="headerlink" title="Git基础"></a>Git基础</h2><h3 id="创建SSH"><a href="#创建SSH" class="headerlink" title="创建SSH"></a>创建SSH</h3><p><a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">创建SSH</a></p>
-<p>````javaScript<br>$ ssh-keygen -t rsa -b 4096 -C “<a href="mailto:your_email@example.com">your_email@example.com</a>“</p>
-<p>````Xnip2019-12-29_13-01-28<br><img src="/images/1577595253560.jpg" alt="创建公私钥"><br>![创建成功后的两个文件]](/images/1577595434937.jpg)<br><img src="/images/Xnip2019-12-29_13-01-28.jpeg" alt="查看pub文件"><br><img src="/images/1577598053476.jpg" alt="多个githup账户如何操作"></p>
+<pre><code class="javaScript">$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></pre>
+<p><img src="/images/1577595253560.jpg" alt="创建公私钥"><br>![创建成功后的两个文件]](/images/1577595434937.jpg)<br><img src="/images/Xnip2019-12-29_13-01-28.jpeg" alt="查看pub文件"><br><img src="/images/1577598053476.jpg" alt="多个githup账户如何操作"></p>
+<blockquote>
+<p>config文件</p>
+</blockquote>
+<pre><code class="javaScript">Host test-github
+  HostName github.com
+  User lijinhai255
+  PreferredAuthentications publickey
+  IdentityFile /Users/a123/Desktop/project/test/githup_key</code></pre>
+<blockquote>
+<p>下载</p>
+</blockquote>
+<pre><code class="javaScript">git clone git@test-github:lijinhai255/iCSS.git</code></pre>
+<p><img src="/images/1577600773810.jpg" alt="下载成功"></p>
 <h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><h3 id="拉取更新"><a href="#拉取更新" class="headerlink" title="拉取更新"></a>拉取更新</h3><h2 id="git-flow及团队协作"><a href="#git-flow及团队协作" class="headerlink" title="git flow及团队协作"></a>git flow及团队协作</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><h3 id="冲突管理"><a href="#冲突管理" class="headerlink" title="冲突管理"></a>冲突管理</h3><h2 id="gitlab-githbu-gitee等使用-私有部署方案"><a href="#gitlab-githbu-gitee等使用-私有部署方案" class="headerlink" title="gitlab/githbu/gitee等使用,私有部署方案"></a>gitlab/githbu/gitee等使用,私有部署方案</h2>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 976041476@qq.com </span>
@@ -518,7 +531,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
     <p><span class="copy-title">发布时间:</span>2019-12-11, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-29, 13:41:21</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-29, 14:40:36</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/11/DevOps/" title="DevOps">https://lijinhai255.github.io/2019/12/11/DevOps/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
