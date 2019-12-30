@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>js方法速查 | 阿海blog</title>
+  <meta name="keywords" content=" js方法 ">
+  <meta name="description" content="js方法速查 | 阿海blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://lijinhai255.github.io/categories/index.html">
+<meta property="og:site_name" content="阿海blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-25T08:10:00.000Z">
+<meta property="article:modified_time" content="2019-12-25T08:13:10.627Z">
+<meta property="article:author" content="阿海">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>阿海</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/lijinhai255" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(24)</small></div></li>
+    
+        
+            
+            <li><div data-rel="大前端">大前端<small>(16)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="大后端">大后端<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维">运维<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="24">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color2">jQuery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">表格</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">表单验证</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">ECMAScript2015</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">大前端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">CSS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">函数</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">对象 - 重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Linux</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Desctructuring</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">React插件</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Template</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">环境安装</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">VIM</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">工具类</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">类 - 重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">数组 - 重学ES5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">版本控制</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">mac快捷键</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">js方法</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">30 Second</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="大前端 "
+           href="/2019/12/25/hello-world/"
+           data-tag="jQuery,表格,表单验证"
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-12-25 11:57:31">2019/12/25</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/24/ECMAScript2015/"
+           data-tag="ECMAScript2015"
+           data-author="" >
+            <span class="post-title" title="ECMAScript2015">ECMAScript2015</span>
+            <span class="post-date" title="2019-12-24 00:00:00">2019/12/24</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/SSR/"
+           data-tag="大前端"
+           data-author="" >
+            <span class="post-title" title="SSR">SSR</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/23/css%E6%A1%88%E4%BE%8B/"
+           data-tag="CSS"
+           data-author="" >
+            <span class="post-title" title="css案例">css案例</span>
+            <span class="post-date" title="2019-12-23 00:00:00">2019/12/23</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/Function/"
+           data-tag="函数,重学ES5"
+           data-author="" >
+            <span class="post-title" title="Function">Function</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/12/02/grid/"
+           data-tag="大前端"
+           data-author="" >
+            <span class="post-title" title="grid">grid</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/Object/"
+           data-tag="对象 - 重学ES5"
+           data-author="" >
+            <span class="post-title" title="Object">Object</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大后端 "
+           href="/2019/12/02/linux%E6%8C%87%E4%BB%A4/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="linux指令">linux指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/js%E8%8E%B7%E5%8F%96%E6%96%87%E6%9C%AC/"
+           data-tag="js方法"
+           data-author="" >
+            <span class="post-title" title="js获取文本">js获取文本</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/11/destructore/"
+           data-tag="重学ES5,Desctructuring"
+           data-author="" >
+            <span class="post-title" title="destructore">destructore</span>
+            <span class="post-date" title="2019-12-11 00:00:00">2019/12/11</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/12/02/svn%E6%8C%87%E4%BB%A4/"
+           data-tag="大前端"
+           data-author="" >
+            <span class="post-title" title="svn指令">svn指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/template/"
+           data-tag="重学ES5,Template"
+           data-author="" >
+            <span class="post-title" title="template">template</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E5%89%8D%E7%AB%AF%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%8C%87%E4%BB%A4/"
+           data-tag="环境安装"
+           data-author="" >
+            <span class="post-title" title="前端环境安装指令">前端环境安装指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大后端 "
+           href="/2019/12/02/vim%E6%8C%87%E4%BB%A4/"
+           data-tag="VIM"
+           data-author="" >
+            <span class="post-title" title="vim指令">vim指令</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/02/%E5%B7%A5%E5%85%B7/"
+           data-tag="工具类"
+           data-author="" >
+            <span class="post-title" title="工具">工具</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E7%B1%BB/"
+           data-tag="类 - 重学ES5"
+           data-author="" >
+            <span class="post-title" title="类">类</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E6%95%B0%E7%BB%84/"
+           data-tag="数组 - 重学ES5"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/24/react%E5%AF%BC%E5%87%BA%E8%A1%A8%E6%A0%BC/"
+           data-tag="React插件"
+           data-author="" >
+            <span class="post-title" title="react导出表格">react导出表格</span>
+            <span class="post-date" title="2019-12-24 00:00:00">2019/12/24</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/%E6%A1%88%E4%BE%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="案例">案例</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/2019/12/11/DevOps/"
+           data-tag="版本控制"
+           data-author="" >
+            <span class="post-title" title="DevOps">DevOps</span>
+            <span class="post-date" title="2019-12-11 00:00:00">2019/12/11</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/02/mac/"
+           data-tag="mac快捷键"
+           data-author="" >
+            <span class="post-title" title="mac">mac</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/js%E6%96%B9%E6%B3%95%E9%80%9F%E6%9F%A5/"
+           data-tag="js方法"
+           data-author="" >
+            <span class="post-title" title="js方法速查">js方法速查</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/30Second/"
+           data-tag="30 Second"
+           data-author="" >
+            <span class="post-title" title="30Second">30Second</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="大前端 "
+           href="/2019/12/02/js%E5%B8%B8%E7%94%A8%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81/"
+           data-tag="js方法"
+           data-author="" >
+            <span class="post-title" title="js常用单行代码">js常用单行代码</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-js方法速查" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">js方法速查</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="大前端">大前端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">js方法</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-30 14:30:15'>2019-12-02 00:00</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JS方法速查"><span class="toc-text">JS方法速查</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数组"><span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-数组去重"><span class="toc-text">1.数组去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-数组合并"><span class="toc-text">2.数组合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-数组排序（sort）"><span class="toc-text">3.数组排序（sort）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-多维数组转一维数组（flat）"><span class="toc-text">4.多维数组转一维数组（flat）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-过滤数组（filter）"><span class="toc-text">5.过滤数组（filter）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-判断数组中的项是否满足于某个条件（some，every）"><span class="toc-text">6.判断数组中的项是否满足于某个条件（some，every）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-操作数组中的每一项，并使其按照一定的逻辑返回（map）"><span class="toc-text">7.操作数组中的每一项，并使其按照一定的逻辑返回（map）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-其他常用的ES6-Array方法"><span class="toc-text">8.其他常用的ES6 Array方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-获得数组最大最小值"><span class="toc-text">9.获得数组最大最小值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-获取数组交集"><span class="toc-text">10.获取数组交集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-数组对象去重"><span class="toc-text">11.数组对象去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-数组乱序"><span class="toc-text">12.数组乱序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-检查数组中某元素出现的次数"><span class="toc-text">13.检查数组中某元素出现的次数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-检查数组中的所有元素是否相等"><span class="toc-text">14.检查数组中的所有元素是否相等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-数组对象，求某一列属性的总和"><span class="toc-text">15.数组对象，求某一列属性的总和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16-分割数组，并操作每一项数组（函数）"><span class="toc-text">16.分割数组，并操作每一项数组（函数）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#👫对象"><span class="toc-text">👫对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-对象合并"><span class="toc-text">1.对象合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-浅拷贝，深拷贝"><span class="toc-text">2.浅拷贝，深拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-拓展：首层浅拷贝"><span class="toc-text">3.拓展：首层浅拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-判断对象是否为空对象"><span class="toc-text">4.判断对象是否为空对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-判断对象中属性的个数"><span class="toc-text">5.判断对象中属性的个数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-JS-对象转-url-查询字符串"><span class="toc-text">6.JS 对象转 url 查询字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-对象遍历"><span class="toc-text">7.对象遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#🌴DOM"><span class="toc-text">🌴DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-常用DOM接口"><span class="toc-text">1.常用DOM接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-判断当前位置是否为页面底部"><span class="toc-text">2.判断当前位置是否为页面底部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-全屏"><span class="toc-text">3.全屏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#退出全屏"><span class="toc-text">退出全屏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全屏事件"><span class="toc-text">全屏事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-判断dom元素是否具有某个className"><span class="toc-text">4.判断dom元素是否具有某个className</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-获取滚动条位置"><span class="toc-text">2.获取滚动条位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-获取url中的参数"><span class="toc-text">3.获取url中的参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-检测设备类型"><span class="toc-text">4.检测设备类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#🕰时间"><span class="toc-text">🕰时间</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Date-常用API"><span class="toc-text">1.Date 常用API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-一个时间戳格式的数字，是多少-天小时分钟秒毫秒"><span class="toc-text">2.一个时间戳格式的数字，是多少 天小时分钟秒毫秒</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-格林尼治时间-转-北京时间（可传格林尼治时间-或者-时间戳）"><span class="toc-text">3.格林尼治时间 转 北京时间（可传格林尼治时间 或者 时间戳）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-获取两个日期相差天数"><span class="toc-text">4.获取两个日期相差天数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-一个数组中，有时间，需要将这个数组按照时间进行排序"><span class="toc-text">5.一个数组中，有时间，需要将这个数组按照时间进行排序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#💍处理JS原生具有的一些问题"><span class="toc-text">💍处理JS原生具有的一些问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-加减法精度缺失问题"><span class="toc-text">1.加减法精度缺失问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-递归优化（尾递归）"><span class="toc-text">2.递归优化（尾递归）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#🙏其他"><span class="toc-text">🙏其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Math函数的一些应用"><span class="toc-text">1.Math函数的一些应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-常用正则速查"><span class="toc-text">2.常用正则速查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-变换变量"><span class="toc-text">3.变换变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-随机生成六位数字验证码"><span class="toc-text">5.随机生成六位数字验证码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-RGB-颜色转-16进制颜色"><span class="toc-text">6.RGB 颜色转 16进制颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-生成随机整数"><span class="toc-text">7.生成随机整数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-去除空格（1-所有空格-2-前后空格-3-前空格-4-后空格-默认为1）"><span class="toc-text">8.去除空格（1-所有空格 2-前后空格 3-前空格 4-后空格 默认为1）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-大小写转换"><span class="toc-text">9.大小写转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-随机16进制颜色-hexColor"><span class="toc-text">10.随机16进制颜色 hexColor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-统计一段文字中指定文字出现次数-keywordsCount（骚操作）"><span class="toc-text">11.统计一段文字中指定文字出现次数 keywordsCount（骚操作）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-好的笔记文章"><span class="toc-text">12.好的笔记文章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-轮询等待函数"><span class="toc-text">13. 轮询等待函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-常见的XSS转义场景"><span class="toc-text">15.常见的XSS转义场景</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JS方法速查"><a href="#JS方法速查" class="headerlink" title="JS方法速查"></a>JS方法速查</h1><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="1-数组去重"><a href="#1-数组去重" class="headerlink" title="1.数组去重"></a>1.数组去重</h3><pre><code class="javaScript">let arrs = [1,2,2,3,3,6,5,5];
+
+// ES6
+[...new Set(arr)] // [1,2,3,6,5]
+// 此方法也能去除数组中重复的项：[...new Set(&#39;ababbc&#39;)].join(&#39;&#39;) // abc
+
+// 其他方法
+function uniq(array){
+    let temp = [];
+    let l = array.length;
+    for(let i = 0; i &lt; l; i++) {
+        for(let j = i + 1; j &lt; l; j++){
+            if (array[i] === array[j]){
+                i++;
+                j = i;
+            }
+        }
+        temp.push(array[i]);
+    }
+    return temp;
+}
+console.log(uniq(arrs)); // [1,2,3,6,5]
+</code></pre>
+<h3 id="2-数组合并"><a href="#2-数组合并" class="headerlink" title="2.数组合并"></a>2.数组合并</h3><pre><code class="javaScript">let arr1 = [1,2,3]
+let arr2 = [4,5,6]
+
+// ES6
+[...arr1, ...arr2] // [1, 2, 3, 4, 5, 6]
+
+
+// 方法2：concat方法（挂载Array原型链上）
+let c = a.concat(b);
+console.log(c); // [1, 2, 3, 4, 5, 6]
+console.log(a); // [1, 2, 3]  不改变本身
+// 备注：看似concat似乎是 数组对象的深拷贝，其实，concat 只是对数组的第一层进行深拷贝
+
+// 方法3：apply方法
+Array.prototype.push.apply(a, b);
+console.log(a); // [1, 2, 3, 4, 5, 6] 改变原目标数组
+console.log(b); // [4, 5, 6]
+</code></pre>
+<h3 id="3-数组排序（sort）"><a href="#3-数组排序（sort）" class="headerlink" title="3.数组排序（sort）"></a>3.数组排序（sort）</h3><pre><code class="javaScript">let objArr = [
+  {name: &#39;test1&#39;, age: 20},
+  {name: &#39;test1&#39;, age: 22},
+  {name: &#39;test1&#39;, age: 21}
+]
+
+// 第一参数a， 第二参数b ---&gt; a-b升序（从小到大）;b-a降序（从大到小），原理就是 两数计算，如果返回的是负数，就保留前者（我可能说的不对，欢迎纠正）
+objArr.sort((a, b) =&gt; {
+  return a.age - b.age
+}) 
+// 结果会按照年龄从小到大的顺序排列
+</code></pre>
+<h3 id="4-多维数组转一维数组（flat）"><a href="#4-多维数组转一维数组（flat）" class="headerlink" title="4.多维数组转一维数组（flat）"></a>4.多维数组转一维数组（flat）</h3><pre><code class="javaScript">let arr = [1, [2], [[3], 4], 5];
+
+// ES6 数组的flat()
+arr.flat() // [1, 2, Array(1), 4, 5] 如果这样写的话只能展开二维数组，但是可以加参数Infinity，就是能展开多维数组
+arr.flat(Infinity) // [1, 2, 3, 4, 5] 注意如果原数组有空位，flat()方法会跳过空位
+
+// 其他方法
+const deepFlatten = arr =&gt; [].concat(...arr.map(v =&gt; (Array.isArray(v) ? deepFlatten(v) : v)));
+deepFlatten(arr); // [1,2,3,4,5]
+
+
+// 执行效率验证（拓展）
+// let start = new Date().getTime();
+// console.log(&#39;reduceDimension: &#39;, deepFlatten([1, [2], [[3], 4], 5]);
+// console.log(&#39;耗时: &#39;, new Date().getTime() - start); // *ms
+
+// ES6 数组的flatMap() 方法大家可以自行查阅一下，拓展下自己的知识面
+</code></pre>
+<h3 id="5-过滤数组（filter）"><a href="#5-过滤数组（filter）" class="headerlink" title="5.过滤数组（filter）"></a>5.过滤数组（filter）</h3><pre><code class="javaScript">let json = [
+  { id: 1, name: &#39;john&#39;, age: 24 },
+  { id: 2, name: &#39;zkp&#39;, age: 21 },
+  { id: 3, name: &#39;mike&#39;, age: 50 }
+];
+
+// ES6
+json.filter( item =&gt; item.age &gt; 22) // [{id: 1, name: &#39;john&#39;, age: 24}, { id: 3, name: &#39;mike&#39;, age: 50 }]
+
+// ES5
+</code></pre>
+<h3 id="6-判断数组中的项是否满足于某个条件（some，every）"><a href="#6-判断数组中的项是否满足于某个条件（some，every）" class="headerlink" title="6.判断数组中的项是否满足于某个条件（some，every）"></a>6.判断数组中的项是否满足于某个条件（some，every）</h3><pre><code class="javaScript">let arr = [4, 2, 3]
+
+// ES6 some方法（有符合）
+arr.some( item =&gt; item &gt; 1) // true
+arr.some( item =&gt; item &gt; 3) // true
+
+// ES5 every（全符合）
+
+arr.every(item =&gt; item &gt; 1) // true
+arr.every(item =&gt; item &gt; 3) // false
+
+// 注意：上面两个有不同哦，一个是有符合的判定，一个是全符合的判定
+</code></pre>
+<h3 id="7-操作数组中的每一项，并使其按照一定的逻辑返回（map）"><a href="#7-操作数组中的每一项，并使其按照一定的逻辑返回（map）" class="headerlink" title="7.操作数组中的每一项，并使其按照一定的逻辑返回（map）"></a>7.操作数组中的每一项，并使其按照一定的逻辑返回（map）</h3><pre><code class="javaScript">var potatos = [
+  { id: &#39;1001&#39;, weight: 50 },
+  { id: &#39;1002&#39;, weight: 80 },
+  { id: &#39;1003&#39;, weight: 120 },
+  { id: &#39;1004&#39;, weight: 40 }
+]
+
+// ES6写法
+const fn = (arr, key) =&gt; arr.map(arr =&gt;  arr[key])
+
+fn(potatos, &#39;id&#39;) // [&quot;1001&quot;, &quot;1002&quot;, &quot;1003&quot;, &quot;1004&quot;]
+fn(potatos, &#39;weight&#39;) // [50, 80, 120, 40]
+</code></pre>
+<h3 id="8-其他常用的ES6-Array方法"><a href="#8-其他常用的ES6-Array方法" class="headerlink" title="8.其他常用的ES6 Array方法"></a>8.其他常用的ES6 Array方法</h3><pre><code class="javaScript">// forEach() 遍历数组
+
+// pop() 删除数组中最后一个元素，并返回该元素的值。此方法更改数组的长度
+
+// shift() 删除数组中第一个元素，并返回该元素的值。此方法更改数组的长度
+
+// push() 将一个或多个元素添加到数组的末尾，并返回该数组的新长度
+
+// unshift() 将一个或多个元素添加到数组的开头，并返回该数组的新长度(该方法修改原有数组)
+
+// 🔥Array.prototype.filter() 创建一个新数组, 其包含通过所提供函数实现的测试的所有元素，不会改变原有值，如果没符合的返回[]
+let arr = [1, 2, 3]
+arr.filter( x =&gt; x &gt; 1) // [2, 3]
+
+// Array.prototype.join() 将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串
+[&#39;Fire&#39;, &#39;Air&#39;, &#39;Water&#39;].join() // &quot;Fire,Air,Water&quot;
+
+// Array.prototype.slice() 取出任意元素, | 参数一：从哪开始，参数二（可选）结束位置，不选的话 就节选到最后了
+[1, 2, 3].slice(0, 1) // [1]
+
+// Array.prototype.splice() 删除任意元素，操作任意元素 | 参数一：从哪开始 | 参数二：操作元素的个数 | 参数三：插入元素的值...（可以写多个参数三）
+[1, 2, 3].splice(0, 1) // 删除 [2, 3]
+
+// Array.prototype.includes() 用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。
+[1, 2, 3].includes(1) // true
+
+// Array.prototype.reverse() 颠倒数组
+[1, 2, 3].reverse() // [3, 2, 1]
+</code></pre>
+<h3 id="9-获得数组最大最小值"><a href="#9-获得数组最大最小值" class="headerlink" title="9.获得数组最大最小值"></a>9.获得数组最大最小值</h3><pre><code class="javaScript">
+// 使用 Math 中的 max/min 方法
+let arr = [22,13,6,55,30];
+
+// ES6
+Math.max(...arr); // 55
+Math.min(...arr); // 6
+
+// ES5
+Math.max.apply(null, arr); // 55
+Math.min.apply(null, arr); // 6
+
+</code></pre>
+<h3 id="10-获取数组交集"><a href="#10-获取数组交集" class="headerlink" title="10.获取数组交集"></a>10.获取数组交集</h3><pre><code class="javaScript">// ES6 写法
+const similarity = (arr1, arr2) =&gt; arr1.filter(v =&gt; arr2.includes(v));
+similarity([1, 2, 3], [1, 2, 4]); // [1,2]
+
+// ES5 写法
+// function similarity(arr1, arr2) {
+//   return arr2.filter(function(v) {
+//     return arr1.includes(v)
+//   })
+// }
+</code></pre>
+<h3 id="11-数组对象去重"><a href="#11-数组对象去重" class="headerlink" title="11.数组对象去重"></a>11.数组对象去重</h3><pre><code class="javaScript">let arr = [
+  {id: 1, name: &#39;Jhon1&#39;},
+  {id: 2, name: &#39;sss&#39;},
+  {id: 3, name: &#39;Jhon2&#39;},
+  {id: 4, name: &#39;Jhon3&#39;}
+]
+
+// ES6
+const uniqueElementsBy = (arr, fn) =&gt;arr.reduce((acc, v) =&gt; {if (!acc.some(x =&gt; fn(v, x))) acc.push(v);return acc;}, []);
+
+// 下面的示例表示，去重依据是 id ，就是 id一样的，只留下一个
+uniqueElementsBy(arr, (a, b) =&gt; a.id === b.id) // [{id: 1, name: &#39;Jhon1&#39;}, {id: 2, name: &#39;sss&#39;}]
+
+</code></pre>
+<h3 id="12-数组乱序"><a href="#12-数组乱序" class="headerlink" title="12.数组乱序"></a>12.数组乱序</h3><pre><code class="javaScript">function shuffle(arr) {
+  let array = arr
+  let index = array.length
+
+  while (index) {
+    index -= 1
+    let randomInedx = Math.floor(Math.random() * index)
+    let middleware = array[index]
+    array[index] = array[randomInedx]
+    array[randomInedx] = middleware
+  }
+
+  return array
+}
+
+let arr = [1,2,3,4,5]
+shuffle(arr) // [3, 4, 2, 5, 1] 结果不定
+</code></pre>
+<h3 id="13-检查数组中某元素出现的次数"><a href="#13-检查数组中某元素出现的次数" class="headerlink" title="13.检查数组中某元素出现的次数"></a>13.检查数组中某元素出现的次数</h3><pre><code class="javaScript">function countOccurrences(arr, value) {
+  return arr.reduce((a, v) =&gt; v === value ? a + 1 : a + 0, 0);
+}
+
+let arr = [1,2,3,4,1,2,4]
+countOccurrences(arr, 1) // 2
+</code></pre>
+<h3 id="14-检查数组中的所有元素是否相等"><a href="#14-检查数组中的所有元素是否相等" class="headerlink" title="14.检查数组中的所有元素是否相等"></a>14.检查数组中的所有元素是否相等</h3><pre><code class="javaScript">const allEqual = arr =&gt; arr.every(val =&gt; val === arr[0]);
+
+// 示例
+allEqual([1, 2, 3, 4, 5, 6]); // false
+allEqual([1, 1, 1, 1]); // true
+</code></pre>
+<h3 id="15-数组对象，求某一列属性的总和"><a href="#15-数组对象，求某一列属性的总和" class="headerlink" title="15.数组对象，求某一列属性的总和"></a>15.数组对象，求某一列属性的总和</h3><pre><code class="javaScript">var potatos = [
+  { id: &#39;1001&#39;, weight: 50 },
+  { id: &#39;1002&#39;, weight: 80 },
+  { id: &#39;1003&#39;, weight: 120 },
+  { id: &#39;1004&#39;, weight: 40 }
+]
+
+// ES6写法
+const fn = (arr, key) =&gt; arr.reduce((sum, p) =&gt; { return p[key] + sum },0)
+
+fn(potatos, &#39;weight&#39;) // 290
+fn(potatos, &#39;id&#39;) // &quot;10041003100210010&quot; 字符串相加就是这个结果，如果有各自的需求，可以自己加上
+</code></pre>
+<h3 id="16-分割数组，并操作每一项数组（函数）"><a href="#16-分割数组，并操作每一项数组（函数）" class="headerlink" title="16.分割数组，并操作每一项数组（函数）"></a>16.分割数组，并操作每一项数组（函数）</h3><pre><code class="javaScript">/**
+ * 数组分隔方法，并且可以传入一个处理函数，用来分隔之前处理数组的每一项
+ * 
+ * @category Array
+ * @param {Array} array 需要处理的数组
+ * @param {number} [size = 1] 每个数组区块的长度
+ * @param {Function} [fn = item =&gt; item] 函数
+ * @returns {Array} 返回一个包含拆分区块的新数组（相当于一个二维数组）。
+ * @example
+ *
+ * chunk([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], 2)
+ * // =&gt; [[&#39;a&#39;, &#39;b&#39;], [&#39;c&#39;, &#39;d&#39;]]
+ *
+ * chunk([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], 3)
+ * // =&gt; [[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;d&#39;]]
+ *
+ * chunk([1, 2, 3, 4], 3, item =&gt; item * 2)
+ * // =&gt; [[2, 4, 6], [8]]
+ */
+
+function chunk(array, size = 1, fn = item =&gt; item) {
+
+    array = array.map(fn)
+
+    size = Math.max(size, 0) // 这一句就很妙，当传入值小于0的时候，置为0，大于0的时候，不写，但不知道性能怎么样
+    const length = array == null ? 0 : array.length
+    if (!length || size &lt; 1) {
+      return []
+    }
+    let index = 0
+    let resIndex = 0
+    const result = new Array(Math.ceil(length / size))
+
+    while (index &lt; length) {
+      result[resIndex++] = array.slice(index, (index += size))
+    }
+    return result
+}
+</code></pre>
+<h2 id="👫对象"><a href="#👫对象" class="headerlink" title="👫对象"></a>👫对象</h2><h3 id="1-对象合并"><a href="#1-对象合并" class="headerlink" title="1.对象合并"></a>1.对象合并</h3><pre><code class="javaScript">
+// 1️⃣ ES6方法
+
+let obj1 = {
+    a:1,
+    b:{ 
+        b1:2 
+    }
+}
+
+let obj2 = { c:3, d:4 }
+
+console.log({...obj1, ...obj2}) // {a: 1, b: {…}, c: 3, d: 4}
+// 支持无限制合并，但如果对象之间存在相同属性，则后面属性会覆盖前面属性。*请注意，这仅适用于浅层合并。
+
+
+// 2️⃣ Obj.assign()：可以把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象
+let o1 = { a: 1 };
+let o2 = { b: 2 };
+
+let obj = Object.assign(o1, o2);
+console.log(obj); // { a: 1, b: 2 }
+console.log(o1);  // { a: 1, b: 2 }, 且 **目标对象** 自身也会改变（也就是assign第一个对象）
+console.log(o2); // { b: 2 } 不改变
+
+// 备注：Object.assign() 拷贝的是属性值。假如源对象的属性值是一个指向对象的引用，它也只拷贝那个引用值
+// 备注：数组合并用 concat() 方法
+
+
+// 3️⃣ $.extend()
+
+</code></pre>
+<h3 id="2-浅拷贝，深拷贝"><a href="#2-浅拷贝，深拷贝" class="headerlink" title="2.浅拷贝，深拷贝"></a>2.浅拷贝，深拷贝</h3><pre><code class="javaScript">
+/**
+ * 此函数，可以完全生成一个新的拷贝对象，也可以将一个对象中的属性拷贝到另一个对象中去
+ * @parmas {Object} 需要被拷贝的对象
+ * @parmas {Object} 可选，目标对象，如果不填直接返回一个对象
+ */
+
+function deepClone(origin, target = {}) {
+
+    // 循环遍历对象的属性
+    for (key in origin) {
+
+        let isType = Object.prototype.toString.call(origin[key])
+
+        // 克隆对象类型
+        if (isType === &#39;[object Object]&#39;) {
+            target[key] = {}
+            deepClone(origin[key], target[key])
+            continue
+        }
+
+        // 克隆数组类型
+         if (isType === &#39;[object Array]&#39;) {
+            target[key] = []
+            deepClone(origin[key], target[key])
+            continue
+        }
+
+        // 克隆 Set 类型
+
+        // 克隆 Map 类型
+
+        // 克隆其他类型
+
+        // 克隆基础类型
+        target[key] = origin[key]
+
+    }
+
+    return target
+}
+
+let zhu = {
+  name: &#39;朱昆鹏&#39;,
+  technology: [&#39;css&#39;, &#39;html&#39;, &#39;js&#39;],
+  girlfriend: {
+    name: &#39;lyt&#39;
+  }
+}
+
+let zhuClone = deepClone(zhu) // zhuClone 内容完全和 zhu 一样
+
+let zhuTest = { test: &#39;测试&#39; }
+let zhuTestClone = deepClone(zhuTest, zhu) // zhuTestClone 不仅有 zhu所有内容，还有 zhuTest 的内容
+
+
+
+// JSON.parse(JSON.stringify(obj) 方法进行拷贝，了解就行
+const obj = {
+  name:&#39;axuebin&#39;,
+  sayHello:function(){
+    console.log(&#39;Hello World&#39;);
+  }
+}
+console.log(JSON.parse(JSON.stringify(obj)); // {name: &quot;axuebin&quot;} ???
+// undefined、function、symbol 会在转换过程中被忽略，所以就不能用这个方法进行深拷贝
+
+
+// 浅拷贝
+function clone(origin, target = {}) {
+    let target = {};
+    for (const key in origin) {
+        target[key] = origin[key];
+    }
+    return target;
+};
+</code></pre>
+<h3 id="3-拓展：首层浅拷贝"><a href="#3-拓展：首层浅拷贝" class="headerlink" title="3.拓展：首层浅拷贝"></a>3.拓展：首层浅拷贝</h3><pre><code class="javaScript">
+function shallowClone(source) {
+  const targetObj = source.constructor === Array ? [] : {}; // 判断复制的目标是数组还是对象
+  for (let keys in source) { // 遍历目标
+    if (source.hasOwnProperty(keys)) {
+      targetObj[keys] = source[keys];
+    }
+  }
+  return targetObj;
+}
+
+const originObj = {
+  a:&#39;a&#39;,
+  b:&#39;b&#39;,
+  c:[1, 2, 3],
+  d:{ dd: &#39;dd&#39; }
+};
+
+const cloneObj = shallowClone(originObj);
+console.log(cloneObj === originObj); // false
+cloneObj.a = &#39;aa&#39;;
+cloneObj.c = [1, 1, 1];
+cloneObj.d.dd = &#39;surprise&#39;;
+
+console.log(cloneObj); // {a:&#39;aa&#39;,b:&#39;b&#39;,c:[1,1,1],d:{dd:&#39;surprise&#39;}}
+console.log(originObj); // {a:&#39;a&#39;,b:&#39;b&#39;,c:[1,2,3],d:{dd:&#39;surprise&#39;}}
+</code></pre>
+<h3 id="4-判断对象是否为空对象"><a href="#4-判断对象是否为空对象" class="headerlink" title="4.判断对象是否为空对象"></a>4.判断对象是否为空对象</h3><pre><code class="javaScript">
+// 参考：https://www.cnblogs.com/HKCC/p/6083575.html
+
+if (JSON.stringify(对象) === &#39;{}&#39;) {
+  console.log(&#39;空&#39;);
+}
+</code></pre>
+<h3 id="5-判断对象中属性的个数"><a href="#5-判断对象中属性的个数" class="headerlink" title="5.判断对象中属性的个数"></a>5.判断对象中属性的个数</h3><pre><code class="javaScript">let obj = {name: &#39;朱昆鹏&#39;, age: 21}
+
+// ES6
+Object.keys(obj).length // 2
+
+// ES5
+let attributeCount = obj =&gt; {
+    let count = 0;
+    for(let i in obj) {
+        if(obj.hasOwnProperty(i)) {  // 建议加上判断,如果没有扩展对象属性可以不加
+            count++;
+        }
+    }
+    return count;
+}
+
+attributeCount(obj) // 2
+</code></pre>
+<h3 id="6-JS-对象转-url-查询字符串"><a href="#6-JS-对象转-url-查询字符串" class="headerlink" title="6.JS 对象转 url 查询字符串"></a>6.JS 对象转 url 查询字符串</h3><pre><code class="javaScript">const objectToQueryString = (obj) =&gt; Object.keys(obj).map((key) =&gt; `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`).join(&#39;&amp;&#39;);
+objectToQueryString({name: &#39;Jhon&#39;, age: 18, address: &#39;beijing&#39;})
+// name=Jhon&amp;age=18&amp;address=beijing
+</code></pre>
+<h3 id="7-对象遍历"><a href="#7-对象遍历" class="headerlink" title="7.对象遍历"></a>7.对象遍历</h3><pre><code class="javaScript">let objs = {
+    1: {
+        name: &#39;朱昆鹏&#39;
+    },
+    2: {
+        name: &#39;林雨桐&#39;
+    }
+}
+
+Object.keys(objs).forEach( ket =&gt; {
+  console.log(key,objs[key])
+})
+
+// 1 {name: &#39;朱昆鹏&#39;} 2 {nama:&#39;林雨桐&#39;}
+</code></pre>
+<h2 id="🌴DOM"><a href="#🌴DOM" class="headerlink" title="🌴DOM"></a>🌴DOM</h2><h3 id="1-常用DOM接口"><a href="#1-常用DOM接口" class="headerlink" title="1.常用DOM接口"></a>1.常用DOM接口</h3><pre><code class="javaScript">
+// 获取DOM节点
+document.getElementById() // 通过ID获取
+document.getElementsByTagName() // 标签名
+document.getElementsByClassName() // 类名
+document.querySelector() // 通过选择器获取一个元素
+document.querySelectorAll() // 通过选择器获取一组元素
+document.body // 获取body的方法
+document.getElementsByName(name) // 通过name属性查找元素节点
+document.documentElement // 获取html的方法
+
+// 节点类型
+元素节点（标签） // 属性nodeType返回值1
+属性节点（标签里的属性）// 返回值2
+文本节点 // 返回值3
+注释节点（comment） // 返回值8
+document // 返回值9
+DocumentFragment // 返回值11
+
+// 节点接口
+dom元素.parentNode // 返回当前元素的父节点
+dom元素.childNodes // 子节点们
+dom元素.firstChild // 第一个子节点
+dom元素.lastChild // 最后一个子节点
+dom元素.nextSibling // 后一个兄弟节点 previousSibling -&gt; 前一个兄弟节点
+
+// 元素节点接口
+dom元素.parentElement // 返回当前元素的父元素节点
+dom元素.children // 返回当前元素的元素子节点
+dom元素.firstElementChild // 第一个元素子节点（IE不兼容）
+dom元素.lastElementChild // 最后一个元素子节点（IE不兼容）
+dom元素.nextElementSibling // 返回后一个兄弟元素节点
+dom元素.previousElementSibling // 返回前一个兄弟元素节点
+
+// 节点的四个属性和一个方法
+节点.nodeName // 元素的标签名，以大写形式表示（只读）
+节点.nodeValue // Text节点或者Comment节点的文本内容，（读写）
+节点.nodeType // 该节点的类型（只读）
+节点.attributes // Element节点的属性集合
+节点.hasChildNodes() // 判断节点 是否有子节点
+
+// Element节点的 属性和方法
+dom元素.innerHtml
+dom元素.innerText
+dom元素.attributes // 获取元素身上所有属性构成的集合
+dom元素.setAttribute(&quot;属性名&quot;,&quot;属性值&quot;)// 给元素设置属性和属性值
+dom元素.getAttribute(&quot;属性名&quot;)// 获取属性值的方法
+dom元素.removerAttribute(&quot;属性&quot;) // 删除属性
+
+
+// ============== 操作接口 ==================
+
+// 增
+document.createElement() // 创建元素节点
+document.createTextNode() // 创建文本节点
+document.creaetComment() //创建注释节点
+document.createDocumentFragment() // 创建文档碎片节点
+
+// 插
+父元素节点.appendChild(子元素对象) // 在元素节点的子元素最后插入子元素
+父元素节点.insertBefore(父元素中的子元素a, 需要插入的子元素b) // 最后的结果是，父元素节点中 b元素插入到了 a的前面
+
+// 删
+元素节点.remove() // 删除DOM元素（自己）
+父元素节点.removeChild(子元素节点) // 删除子元素
+
+// 替换
+父元素节点.replaceChild(新的节点, 需要被替换的子节点)
+
+// 复制
+元素节点.cloneChild() // 返回值是 复制出来的节点
+
+// 元素节点赋值 示例
+dom元素.style.width = ...
+dom元素.style.backgroundColor = ...
+dom元素.className = ...
+
+</code></pre>
+<h3 id="2-判断当前位置是否为页面底部"><a href="#2-判断当前位置是否为页面底部" class="headerlink" title="2.判断当前位置是否为页面底部"></a>2.判断当前位置是否为页面底部</h3><pre><code class="javaScript">function bottomVisible() {
+  return document.documentElement.clientHeight + window.scrollY &gt;= (document.documentElement.scrollHeight || document.documentElement.clientHeight)
+}
+
+bottomVisible() // 返回值为true/false
+</code></pre>
+<h3 id="3-全屏"><a href="#3-全屏" class="headerlink" title="3.全屏"></a>3.全屏</h3><pre><code class="javaScript">function launchFullscreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen()
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen()
+  } else if (element.msRequestFullscreen) {
+    element.msRequestFullscreen()
+  } else if (element.webkitRequestFullscreen) {
+    element.webkitRequestFullScreen()
+  }
+}
+
+launchFullscreen(document.documentElement) // 整个页面进入全屏
+launchFullscreen(document.getElementById(&quot;id&quot;)) //某个元素进入全屏
+</code></pre>
+<h3 id="退出全屏"><a href="#退出全屏" class="headerlink" title="退出全屏"></a>退出全屏</h3><pre><code class="javaScript">function exitFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen()
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen()
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen()
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen()
+  }
+}
+
+exitFullscreen()
+</code></pre>
+<h3 id="全屏事件"><a href="#全屏事件" class="headerlink" title="全屏事件"></a>全屏事件</h3><pre><code class="javaScript">document.addEventListener(&quot;fullscreenchange&quot;, function (e) {
+  if (document.fullscreenElement) {
+    console.log(&#39;进入全屏&#39;)
+  } else {
+    console.log(&#39;退出全屏&#39;)
+  }
+})
+</code></pre>
+<h3 id="4-判断dom元素是否具有某个className"><a href="#4-判断dom元素是否具有某个className" class="headerlink" title="4.判断dom元素是否具有某个className"></a>4.判断dom元素是否具有某个className</h3><p>方法一：使用HTML5新增classList 来操作类名</p>
+<pre><code class="javaScript">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;test&quot; class=&quot;te&quot;&gt;&lt;/div&gt;
+
+  &lt;script&gt;
+
+    let div = document.getElementById(&#39;test&#39;)
+    console.log(div.classList.contains(&quot;te&quot;)) // true
+
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>拓展：</p>
+<ul>
+<li>classList.add(newClassName)；添加新的类名，如已经存在，取消添加</li>
+<li>classList.contains(oldClassName)：确定元素中是否包含指定的类名，返回值为true，false</li>
+<li>classList.remove(oldClassName)：移除已经存在的类名;</li>
+<li>classList.toggle(className)：如果classList中存在给定的值，删除它，否则，添加它；<br>方法二<pre><code class="javaScript">const  hasClass = (el, className) =&gt; new RegExp(`(^|\\s)${className}(\\s|$)`).test(el.className);
+</code></pre>
+</li>
+</ul>
+<pre><code>## 🌱BOM
+### 1.返回当前网页地址
+````javaScript
+function currentURL() {
+  return window.location.href
+}
+
+currentURL() // &quot;https://juejin.im/timeline&quot;
+</code></pre><h3 id="2-获取滚动条位置"><a href="#2-获取滚动条位置" class="headerlink" title="2.获取滚动条位置"></a>2.获取滚动条位置</h3><pre><code class="javaScript">function getScrollPosition(el = window) {
+  return {
+    x: (el.pageXOffset !== undefined) ? el.pageXOffset : el.scrollLeft,
+    y: (el.pageYOffset !== undefined) ? el.pageYOffset : el.scrollTop
+  }
+}
+
+getScrollPosition() // {x: 0, y: 692}
+</code></pre>
+<h3 id="3-获取url中的参数"><a href="#3-获取url中的参数" class="headerlink" title="3.获取url中的参数"></a>3.获取url中的参数</h3><pre><code class="javaScript">function getURLParameters(url) {
+  const params = url.match(/([^?=&amp;]+)(=([^&amp;]*))/g)
+  return params?params.reduce(
+    (a, v) =&gt; (a[v.slice(0, v.indexOf(&#39;=&#39;))] = v.slice(v.indexOf(&#39;=&#39;) + 1), a), {}
+  ):[]
+}
+
+getURLParameters(&#39;http://www.baidu.com/index?name=tyler&#39;) // {name: &quot;tyler&quot;}
+</code></pre>
+<h3 id="4-检测设备类型"><a href="#4-检测设备类型" class="headerlink" title="4.检测设备类型"></a>4.检测设备类型</h3><pre><code class="javaScript">const detectDeviceType = () =&gt;/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent) ? &#39;Mobile&#39; : &#39;Desktop&#39;;
+
+detectDeviceType() // &quot;Desktop&quot;
+</code></pre>
+<h2 id="🕰时间"><a href="#🕰时间" class="headerlink" title="🕰时间"></a>🕰时间</h2><h3 id="1-Date-常用API"><a href="#1-Date-常用API" class="headerlink" title="1.Date 常用API"></a>1.Date 常用API</h3><pre><code class="javaScript">new Date() // 创建一个时间对象 Fri Jul 12 2019 19:59:59 GMT+0800 (中国标准时间)
+
+// 返回自1970年1月1日 00:00:00 UTC到当前时间的毫秒数。
+Date.now(); // 1562932828164
+
+// 解析一个表示某个日期的字符串，并返回从1970-1-1 00:00:00 UTC 到该日期对象（该日期对象的UTC时间）的毫秒数
+Date.parse(&#39;2019.7.12&#39;) // 1562860800000
+
+// 年月日时分秒 获取
+let dateMe = new Date()
+
+dateMe.getFullYear() // 2019 | 根据本地时间返回指定日期的年份
+dateMe.getMonth() // 6 | 根据本地时间，返回一个指定的日期对象的月份，为基于0的值（0表示一年中的第一月）。
+dateMe.getDate() // 12 | 根据本地时间，返回一个指定的日期对象为一个月中的哪一日（从1--31）
+dateMe.getHours() // 20 |根据本地时间，返回一个指定的日期对象的小时。
+dateMe.getMinutes() // 11 | 根据本地时间，返回一个指定的日期对象的分钟数。
+dateMe.getSeconds() // 29 | 方法根据本地时间，返回一个指定的日期对象的秒数
+dateMe.getMilliseconds() // 363 | 根据本地时间，返回一个指定的日期对象的毫秒数。
+
+dateMe.toJSON() // 🔥 &quot;2019-07-12T12:05:15.363Z&quot; | 返回 Date 对象的字符串形式
+dateMe.getDay() // 5 | 根据本地时间，返回一个具体日期中一周的第几天，0 表示星期天（0 - 6）
+dateMe.getTime() // 1562933115363 | 方法返回一个时间的格林威治时间数值。
+dateMe.toString() // &quot;Fri Jul 12 2019 20:05:15 GMT+0800 (中国标准时间)&quot; | 返回一个字符串，表示该Date对象
+dateMe.getTimezoneOffset() // -480（说明比正常时区慢480分钟，所以要加480分钟才对） | 返回协调世界时（UTC）相对于当前时区的时间差值，单位为分钟。
+dateMe.toDateString() // &quot;Fri Jul 12 2019&quot; | 以美式英语和人类易读的形式返回一个日期对象日期部分的字符串。
+</code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener">MDN</a></p>
+<h3 id="2-一个时间戳格式的数字，是多少-天小时分钟秒毫秒"><a href="#2-一个时间戳格式的数字，是多少-天小时分钟秒毫秒" class="headerlink" title="2.一个时间戳格式的数字，是多少 天小时分钟秒毫秒"></a>2.一个时间戳格式的数字，是多少 天小时分钟秒毫秒</h3><pre><code class="javaScript">const formatDuration = ms =&gt; {
+  if (ms &lt; 0) ms = -ms;
+  const time = {
+    day: Math.floor(ms / 86400000),
+    hour: Math.floor(ms / 3600000) % 24,
+    minute: Math.floor(ms / 60000) % 60,
+    second: Math.floor(ms / 1000) % 60,
+    millisecond: Math.floor(ms) % 1000
+  };
+  return Object.entries(time)
+    .filter(val =&gt; val[1] !== 0)
+    .map(([key, val]) =&gt; `${val} ${key}${val !== 1 ? &#39;s&#39; : &#39;&#39;}`)
+    .join(&#39;, &#39;);
+};
+
+formatDuration(3161012); // 52 minutes, 41 seconds, 12 milliseconds
+</code></pre>
+<h3 id="3-格林尼治时间-转-北京时间（可传格林尼治时间-或者-时间戳）"><a href="#3-格林尼治时间-转-北京时间（可传格林尼治时间-或者-时间戳）" class="headerlink" title="3.格林尼治时间 转 北京时间（可传格林尼治时间 或者 时间戳）"></a>3.格林尼治时间 转 北京时间（可传格林尼治时间 或者 时间戳）</h3><pre><code class="javaScript">function myTimeToLocal(inputTime){
+    if(!inputTime &amp;&amp; typeof inputTime !== &#39;number&#39;){
+        return &#39;&#39;;
+    }
+    let localTime = &#39;&#39;;
+    inputTime = new Date(inputTime).getTime();
+    const offset = (new Date()).getTimezoneOffset();
+    localTime = (new Date(inputTime - offset * 60000)).toISOString();
+    localTime = localTime.substr(0, localTime.lastIndexOf(&#39;.&#39;));
+    localTime = localTime.replace(&#39;T&#39;, &#39; &#39;);
+    return localTime;
+}
+
+console.log(myTimeToLocal(1530540726443)); // 2018-07-02 22:12:06
+console.log(myTimeToLocal(&#39;2017-11-16T05:23:20.000Z&#39;)); // 2017-11-16 13:23:20
+</code></pre>
+<h3 id="4-获取两个日期相差天数"><a href="#4-获取两个日期相差天数" class="headerlink" title="4.获取两个日期相差天数"></a>4.获取两个日期相差天数</h3><pre><code class="javaScript">function getDaysDiffBetweenDates (dateInitial, dateFinal) {
+    return (dateFinal - dateInitial) / (1000 * 3600 * 24);
+}
+
+getDaysDiffBetweenDates(new Date(&#39;2017-12-13&#39;), new Date(&#39;2017-12-22&#39;)); // 9
+</code></pre>
+<h3 id="5-一个数组中，有时间，需要将这个数组按照时间进行排序"><a href="#5-一个数组中，有时间，需要将这个数组按照时间进行排序" class="headerlink" title="5.一个数组中，有时间，需要将这个数组按照时间进行排序"></a>5.一个数组中，有时间，需要将这个数组按照时间进行排序</h3><pre><code class="javaScript">let data = [
+{
+  id: 1,
+  publishTime: &quot;2019-05-14 18:10:29&quot;
+},
+{
+  id: 2,
+  publishTime: &quot;2019-05-14 18:17:29&quot;
+},
+{
+  id: 3,
+  publishTime: &quot;2019-05-14 15:09:25&quot;
+}]
+
+data.sort((a, b) =&gt; b.publishTime - a.publishTime);
+
+// 0: {id: 2, publishTime: &quot;2019-05-14 18:17:29&quot;}
+// 1: {id: 1, publishTime: &quot;2019-05-14 18:10:29&quot;}
+// 2: {id: 3, publishTime: &quot;2019-05-14 15:09:25&quot;}
+</code></pre>
+<h2 id="💍处理JS原生具有的一些问题"><a href="#💍处理JS原生具有的一些问题" class="headerlink" title="💍处理JS原生具有的一些问题"></a>💍处理JS原生具有的一些问题</h2><h3 id="1-加减法精度缺失问题"><a href="#1-加减法精度缺失问题" class="headerlink" title="1.加减法精度缺失问题"></a>1.加减法精度缺失问题</h3><pre><code class="javaScript">// 减法函数（因为JS小数计算 丢失精度）
+function sub(arg1, arg2) { 
+    let r1, r2, m, n; 
+    try { r1 = arg1.toString().split(&quot;.&quot;)[1].length } catch (e) { r1 = 0 } 
+    try { r2 = arg2.toString().split(&quot;.&quot;)[1].length } catch (e) { r2 = 0 } 
+    m = Math.pow(10, Math.max(r1, r2)); 
+    n = (r1 &gt;= r2) ? r1 : r2; 
+    return Number(((arg1 * m - arg2 * m) / m).toFixed(n)); 
+}
+</code></pre>
+<h3 id="2-递归优化（尾递归）"><a href="#2-递归优化（尾递归）" class="headerlink" title="2.递归优化（尾递归）"></a>2.递归优化（尾递归）</h3><pre><code class="javaScript">// 尾递归函数 摘自阮一峰ES6 | 自己懒得写了
+function tco(f) {
+  let value;
+  let active = false;
+  let accumulated = [];
+
+  return function accumulator() {
+    accumulated.push(arguments);
+    if (!active) {
+      active = true;
+      while (accumulated.length) {
+        value = f.apply(this, accumulated.shift());
+      }
+      active = false;
+      return value;
+    }
+  };
+}
+
+// 使用
+新的函数 = tco(递归函数)
+</code></pre>
+<h2 id="🙏其他"><a href="#🙏其他" class="headerlink" title="🙏其他"></a>🙏其他</h2><h3 id="1-Math函数的一些应用"><a href="#1-Math函数的一些应用" class="headerlink" title="1.Math函数的一些应用"></a>1.Math函数的一些应用</h3><pre><code class="javaScript">parseInt(5.12) // 5 | 只保留整数部分（丢弃小数部分）
+Math.floor(5.12) // 5 | 向下取整（效果和parseInt一样）
+Math.ceil(5.12) // 6 | 向上取整（有小数，整数就+1）
+Math.round(5.499) // 5 | 四舍五入
+Math.round(5.501) // 6 | 四舍五入
+Math.abs(-5) // 5 | 绝对值
+Math.max(5, 6) // 6 | 返回两者中较大的数
+Math.min(5, 6) // 5 | 返回两者中较小的数
+Math.random() // 随机数 (0-1)
+</code></pre>
+<h3 id="2-常用正则速查"><a href="#2-常用正则速查" class="headerlink" title="2.常用正则速查"></a>2.常用正则速查</h3><ul>
+<li><p>消除字符串首尾两端的空格（替换）</p>
+<pre><code class="javaScript">let reg = /^\s+|\s+$/g;
+let str = &#39; #id div.class &#39;; 
+str.replace(reg, &#39;&#39;) // &quot;#id div.class&quot;</code></pre>
+</li>
+<li><p>把手机号码替换成（替换)</p>
+<pre><code class="javaScript">var reg = /1[24578]\d{9}/;
+var str = &#39;姓名：朱昆鹏 手机：15932638907&#39;; // 手记号瞎写的
+str.replace(reg, &#39;***&#39;) //&quot;姓名：朱昆鹏 手机：***&quot;</code></pre>
+</li>
+<li><p>替换敏感字（替换）</p>
+<pre><code class="javaScript">let str = &#39;中国中国人民解放军中华人民共和国&#39;;
+let r = str.replace(/中国|军/g, input =&gt; {
+  let t = &#39;&#39;;
+  for (let i = 0; i&lt;input.length; i++) {
+      t += &#39;*&#39;;
+  }
+  return t;
+})
+console.log(r); //****人民解放*中华人民共和国 </code></pre>
+</li>
+<li><p>千位分隔符（替换）</p>
+<pre><code class="javaScript">let reg = /(\d)(?=(?:\d{3})+$)/g
+let str = &#39;100002003232322&#39;;    
+let r = str.replace(, &#39;$1,&#39;); //100,002,003,232,322</code></pre>
+</li>
+<li><p>匹配网页标签（匹配）</p>
+<pre><code class="javaScript">var reg = /&lt;(.+)&gt;.+&lt;\/\1&gt;/;
+var str = &#39;朱昆鹏&lt;div&gt;2707509@.qq.com&lt;/div&gt;朱昆鹏&#39;;    
+str.match(reg); // [&quot;&lt;div&gt;2707509@.qq.com&lt;/div&gt;&quot;]</code></pre>
+</li>
+<li><p>验证手机号</p>
+<pre><code class="javaScript">let reg = /^1((3[\d])|(4[5,6,9])|(5[0-3,5-9])|(6[5-7])|(7[0-8])|(8[1-3,5-8])|(9[1,8,9]))\d{8}$/;
+reg.test(&#39;15932539095&#39;); //true
+reg.test(&#39;234554568997&#39;); //false</code></pre>
+</li>
+<li><p>验证邮箱地址(验证)</p>
+<pre><code class="javaScript">let reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+reg.test(&#39;2775033@hotmail.com&#39;); //true
+reg.test(&#39;abc@&#39;); //false</code></pre>
+</li>
+<li><p>验证身份证（验证）</p>
+<pre><code class="javaScript">let reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/
+reg.test(&#39;31210119651230518X&#39;); //true 自己瞎写的
+reg.test(&#39;2101196523s230518X&#39;); //false 自己瞎写的</code></pre>
+</li>
+<li><p>验证中国邮箱编码（验证）</p>
+<pre><code class="javaScript">let reg = /^(0[1-7]|1[0-356]|2[0-7]|3[0-6]|4[0-7]|5[1-7]|6[1-7]|7[0-5]|8[013-6])\d{4}$/
+reg.test(&#39;065900&#39;); //true
+reg.test(&#39;999999&#39;); //false</code></pre>
+</li>
+<li><p>验证ipv4地址正则（验证）</p>
+<pre><code class="javaScript">let reg = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/
+reg.test(&#39;192.168.1.192&#39;); //true
+reg.test(&#39;127.0.0.1s&#39;); //false</code></pre>
+</li>
+<li><p>验证银行卡号（16或19位）</p>
+<pre><code class="javaScript">let reg = /^([1-9]{1})(\d{15}|\d{18})$/
+reg.test(&#39;6222026006705354218&#39;) // true</code></pre>
+</li>
+<li><p>验证中文姓名（验证）</p>
+<pre><code class="javaScript">let reg = /^([\u4e00-\u9fa5\·]{2,10})$/
+reg.test(&#39;朱昆鹏&#39;); //true
+reg.test(&#39;Zhu Kunpeng&#39;); //false</code></pre>
+<h3 id="3-变换变量"><a href="#3-变换变量" class="headerlink" title="3.变换变量"></a>3.变换变量</h3><pre><code class="javaScript"></code></pre>
+</li>
+</ul>
+<p>// [letA，letB] = [letB，letA];</p>
+<p>let a = 1;<br>let b = 2;<br>[a, b] = [b, a] // a = 2 b = 1</p>
+<pre><code>### 4.格式化对象为JSON代码
+````javaScript
+const formatted = JSON.stringify({name: &#39;Jhon&#39;, age: 18, address: &#39;sz&#39;}, null, 4);
+/*
+{
+    &quot;name&quot;: &quot;Jhon&quot;,
+    &quot;age&quot;: 18,
+    &quot;address&quot;: &quot;sz&quot;
+}
+*/
+
+// 该字符串化命令有三个参数。第一个是Javascript对象。第二个是可选函数，可用于在JSON进行字符串化时对其执行操作。最后一个参数指示要添加多少空格作为缩进以格式化JSON。省略最后一个参数，JSON将返回一个长行。如果myObj中存在循环引用，则会格式失败。
+</code></pre><h3 id="5-随机生成六位数字验证码"><a href="#5-随机生成六位数字验证码" class="headerlink" title="5.随机生成六位数字验证码"></a>5.随机生成六位数字验证码</h3><pre><code class="javaScript">const code = Math.floor(Math.random() * 1000000).toString().padStart(6, &quot;0&quot;) // 942377
+</code></pre>
+<h3 id="6-RGB-颜色转-16进制颜色"><a href="#6-RGB-颜色转-16进制颜色" class="headerlink" title="6.RGB 颜色转 16进制颜色"></a>6.RGB 颜色转 16进制颜色</h3><pre><code class="javaScript">const RGBToHex = (r, g, b) =&gt; ((r &lt;&lt; 16) + (g &lt;&lt; 8) + b).toString(16).padStart(6, &#39;0&#39;);
+RGBToHex(255, 165, 1); // &#39;ffa501&#39;
+</code></pre>
+<h3 id="7-生成随机整数"><a href="#7-生成随机整数" class="headerlink" title="7.生成随机整数"></a>7.生成随机整数</h3><pre><code class="javaScript">function randomNum(min, max) {
+  switch (arguments.length) {
+    case 1:
+      return parseInt(Math.random() * min + 1, 10)
+    case 2:
+      return parseInt(Math.random() * (max - min + 1) + min, 10)
+    default:
+      return 0
+  }
+}
+
+randomNum(1,10) // 随机 [1,10]的整数
+</code></pre>
+<h3 id="8-去除空格（1-所有空格-2-前后空格-3-前空格-4-后空格-默认为1）"><a href="#8-去除空格（1-所有空格-2-前后空格-3-前空格-4-后空格-默认为1）" class="headerlink" title="8.去除空格（1-所有空格 2-前后空格 3-前空格 4-后空格 默认为1）"></a>8.去除空格（1-所有空格 2-前后空格 3-前空格 4-后空格 默认为1）</h3><pre><code class="javaScript">
+/**
+ * trim 去除空格
+ * param1  string str 待处理字符串
+ * param2  number type 去除空格类型 1-所有空格  2-前后空格  3-前空格 4-后空格 默认为1
+ * return  string str 处理后的字符串
+ */
+function trim(str, type = 1) {
+    if (type &amp;&amp; type !== 1 &amp;&amp; type !== 2 &amp;&amp; type !== 3 &amp;&amp; type !== 4) return;
+    switch (type) {
+        case 1:
+            return str.replace(/\s/g, &quot;&quot;);
+        case 2:
+            return str.replace(/(^\s)|(\s*$)/g, &quot;&quot;);
+        case 3:
+            return str.replace(/(^\s)/g, &quot;&quot;);
+        case 4:
+            return str.replace(/(\s$)/g, &quot;&quot;);
+        default:
+            return str;
+    }
+}
+</code></pre>
+<h3 id="9-大小写转换"><a href="#9-大小写转换" class="headerlink" title="9.大小写转换"></a>9.大小写转换</h3><pre><code class="javaScript">
+/**
+ * 大小写转换
+ * param1 string str 待转换的字符串
+ * param2 number type 1-全大写 2-全小写 3-首字母大写 
+ * return  string str 处理后的字符串
+ */
+
+function turnCase(str, type) {
+    switch (type) {
+        case 1:
+            return str.toUpperCase()
+        case 2:
+            return str.toLowerCase();
+        case 3:
+            return str[0].toUpperCase() + str.substr(1).toLowerCase()
+        default:
+            return str;
+    }
+}
+
+</code></pre>
+<h3 id="10-随机16进制颜色-hexColor"><a href="#10-随机16进制颜色-hexColor" class="headerlink" title="10.随机16进制颜色 hexColor"></a>10.随机16进制颜色 hexColor</h3><pre><code class="javaScript">/**
+ * 随机16进制颜色 hexColor
+ * return  string str 带#号的随机16进制颜色
+ */
+
+function hexColor() {
+
+    let str = &#39;#&#39;;
+    let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;];
+    for (let i = 0; i &lt; 6; i++) {
+        let index = Number.parseInt(Math.random() * 16);
+        str += arr[index]
+    }
+    return str;
+}
+</code></pre>
+<h3 id="11-统计一段文字中指定文字出现次数-keywordsCount（骚操作）"><a href="#11-统计一段文字中指定文字出现次数-keywordsCount（骚操作）" class="headerlink" title="11.统计一段文字中指定文字出现次数 keywordsCount（骚操作）"></a>11.统计一段文字中指定文字出现次数 keywordsCount（骚操作）</h3><pre><code class="javaScript">/**
+ * 关键词统计：统计一段文字中指定文字出现次数 keywordsCount
+ * param1 string text 进行统计的文本
+ * param2 string keywords 进行统计的关键词
+ * return number count 关键词出现次数
+ * tip:param1 document.body.innerText--全文统计
+ */
+
+function keywordsCount(text, keywords) {
+    return text.split(keywords).length - 1
+}
+
+</code></pre>
+<h2 id="12-好的笔记文章"><a href="#12-好的笔记文章" class="headerlink" title="12.好的笔记文章"></a>12.好的笔记文章</h2><ul>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Events" target="_blank" rel="noopener">JS原生事件</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/major_zhang/article/details/78118823" target="_blank" rel="noopener">JS选择器 new</a></p>
+<h3 id="13-轮询等待函数"><a href="#13-轮询等待函数" class="headerlink" title="13. 轮询等待函数"></a>13. 轮询等待函数</h3><pre><code class="javaScript">/**
+* 轮询等待函数
+* 
+* @param {Function} 轮询结束的条件
+* @param {Function} 成功之后的回调函数
+* @param {Number} 轮询时间（默认100ms）
+* @param {Number} 轮询最长的时间（默认1000ms）
+*/
+function pollingWaiting (callBack, resCallBack, time = 100, lastTime = 1000) {
+
+let startTime = Date.now()
+let t = null;
+let fn =  function () {
+    t = setTimeout(() =&gt; {
+        if (!callBack()) {
+            // 此处可以采用尾递归优化，来防止占用过多内存
+            console.log(&#39;startTime&#39;, Date.now() - startTime &gt; lastTime)
+            (Date.now() - startTime &gt; lastTime) ? window.clearInterval(t) : fn()
+        } else {
+            resCallBack()
+        }
+    }, time);
+}
+fn()
+}
+</code></pre>
+</li>
+</ul>
+<p>// 示例<br>let a = 1;<br>setTimeout( () =&gt; {<br>  a = 2<br>}, 500)</p>
+<p>pollingWaiting( () =&gt; {<br>  return a === 2<br>}, () =&gt; {<br>  console.log(‘触发了’, a)<br>}, 100, 800)</p>
+<p>// 4 startTime false<br>// 触发了 2</p>
+<pre><code>### 14.大数值转换为万，亿
+````javaScript
+/**
+ * 大数值转换为万，亿函数
+ * 
+ * @param {Number} 大数
+ * @param {Number} 保留几位小数
+ */
+function numConversion (num, point = 2) {
+
+  let numStr = num.toString().split(&#39;.&#39;)[0] // 去掉小数点后的数值字符串
+  let numLen = numStr.length
+
+  if (numLen &lt; 6) {
+    return numStr
+  } else if (numLen &gt;= 6 &amp;&amp; numLen &lt;= 8) {
+    let decimal = numStr.substring(numLen - 4, numLen - 4 + point)
+    let res = parseInt(num / 10000) + &#39;.&#39; + decimal + &#39;万&#39;
+    return res
+  } else if (numLen &gt; 8) {
+    let decimal = numStr.substring(numLen - 8, numLen - 8 + point)
+    let res = parseInt(num / 100000000) + &#39;.&#39; + decimal + &#39;亿&#39;
+    return res
+  }
+}
+
+numConversion(12345) // 12345
+numConversion(1234567) // 123.45万
+numConversion(123456789) // 1.23亿
+</code></pre><h3 id="15-常见的XSS转义场景"><a href="#15-常见的XSS转义场景" class="headerlink" title="15.常见的XSS转义场景"></a>15.常见的XSS转义场景</h3><pre><code class="javaScript">// 转义HTML特殊字符
+function HtmlEncode(str) {
+    var hex = new Array(&#39;0&#39;,&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;7&#39;,&#39;8&#39;,&#39;9&#39;,&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;);
+    var preescape = str;
+    var escaped = &quot;&quot;;
+    for(var i = 0; i &lt; preescape.length; i++){
+        var p = preescape.charAt(i);
+        escaped = escaped + escapeCharx(p);
+    }
+
+    return escaped;
+
+    function escapeCharx(original){
+        var found=true;
+        var thechar=original.charCodeAt(0);
+        switch(thechar) {
+            case 10: return &quot;&lt;br/&gt;&quot;; break; //newline
+            case 32: return &quot;&amp;nbsp;&quot;; break; //space
+            case 34:return &quot;&amp;quot;&quot;; break; //&quot;
+            case 38:return &quot;&amp;amp;&quot;; break; //&amp;
+            case 39:return &quot;&amp;#x27;&quot;; break; //&#39;
+            case 47:return &quot;&amp;#x2F;&quot;; break; // /
+            case 60:return &quot;&amp;lt;&quot;; break; //&lt;
+            case 62:return &quot;&amp;gt;&quot;; break; //&gt;
+            case 198:return &quot;&amp;AElig;&quot;; break;
+            case 193:return &quot;&amp;Aacute;&quot;; break;
+            case 194:return &quot;&amp;Acirc;&quot;; break; 
+            case 192:return &quot;&amp;Agrave;&quot;; break; 
+            case 197:return &quot;&amp;Aring;&quot;; break; 
+            case 195:return &quot;&amp;Atilde;&quot;; break; 
+            case 196:return &quot;&amp;Auml;&quot;; break; 
+            case 199:return &quot;&amp;Ccedil;&quot;; break; 
+            case 208:return &quot;&amp;ETH;&quot;; break;
+            case 201:return &quot;&amp;Eacute;&quot;; break; 
+            case 202:return &quot;&amp;Ecirc;&quot;; break; 
+            case 200:return &quot;&amp;Egrave;&quot;; break; 
+            case 203:return &quot;&amp;Euml;&quot;; break;
+            case 205:return &quot;&amp;Iacute;&quot;; break;
+            case 206:return &quot;&amp;Icirc;&quot;; break; 
+            case 204:return &quot;&amp;Igrave;&quot;; break; 
+            case 207:return &quot;&amp;Iuml;&quot;; break;
+            case 209:return &quot;&amp;Ntilde;&quot;; break; 
+            case 211:return &quot;&amp;Oacute;&quot;; break;
+            case 212:return &quot;&amp;Ocirc;&quot;; break; 
+            case 210:return &quot;&amp;Ograve;&quot;; break; 
+            case 216:return &quot;&amp;Oslash;&quot;; break; 
+            case 213:return &quot;&amp;Otilde;&quot;; break; 
+            case 214:return &quot;&amp;Ouml;&quot;; break;
+            case 222:return &quot;&amp;THORN;&quot;; break; 
+            case 218:return &quot;&amp;Uacute;&quot;; break; 
+            case 219:return &quot;&amp;Ucirc;&quot;; break; 
+            case 217:return &quot;&amp;Ugrave;&quot;; break; 
+            case 220:return &quot;&amp;Uuml;&quot;; break; 
+            case 221:return &quot;&amp;Yacute;&quot;; break;
+            case 225:return &quot;&amp;aacute;&quot;; break; 
+            case 226:return &quot;&amp;acirc;&quot;; break; 
+            case 230:return &quot;&amp;aelig;&quot;; break; 
+            case 224:return &quot;&amp;agrave;&quot;; break; 
+            case 229:return &quot;&amp;aring;&quot;; break; 
+            case 227:return &quot;&amp;atilde;&quot;; break; 
+            case 228:return &quot;&amp;auml;&quot;; break; 
+            case 231:return &quot;&amp;ccedil;&quot;; break; 
+            case 233:return &quot;&amp;eacute;&quot;; break;
+            case 234:return &quot;&amp;ecirc;&quot;; break; 
+            case 232:return &quot;&amp;egrave;&quot;; break; 
+            case 240:return &quot;&amp;eth;&quot;; break; 
+            case 235:return &quot;&amp;euml;&quot;; break; 
+            case 237:return &quot;&amp;iacute;&quot;; break; 
+            case 238:return &quot;&amp;icirc;&quot;; break; 
+            case 236:return &quot;&amp;igrave;&quot;; break; 
+            case 239:return &quot;&amp;iuml;&quot;; break; 
+            case 241:return &quot;&amp;ntilde;&quot;; break; 
+            case 243:return &quot;&amp;oacute;&quot;; break;
+            case 244:return &quot;&amp;ocirc;&quot;; break; 
+            case 242:return &quot;&amp;ograve;&quot;; break; 
+            case 248:return &quot;&amp;oslash;&quot;; break; 
+            case 245:return &quot;&amp;otilde;&quot;; break;
+            case 246:return &quot;&amp;ouml;&quot;; break; 
+            case 223:return &quot;&amp;szlig;&quot;; break; 
+            case 254:return &quot;&amp;thorn;&quot;; break; 
+            case 250:return &quot;&amp;uacute;&quot;; break; 
+            case 251:return &quot;&amp;ucirc;&quot;; break; 
+            case 249:return &quot;&amp;ugrave;&quot;; break; 
+            case 252:return &quot;&amp;uuml;&quot;; break; 
+            case 253:return &quot;&amp;yacute;&quot;; break; 
+            case 255:return &quot;&amp;yuml;&quot;; break;
+            case 162:return &quot;&amp;cent;&quot;; break; 
+            case &#39;\r&#39;: break;
+            default:
+                found=false;
+                break;
+        }
+        if(!found){
+            if(thechar&gt;127) {
+                var c=thechar;
+                var a4=c%16;
+                c=Math.floor(c/16); 
+                var a3=c%16;
+                c=Math.floor(c/16);
+                var a2=c%16;
+                c=Math.floor(c/16);
+                var a1=c%16;
+                return &quot;&amp;#x&quot;+hex[a1]+hex[a2]+hex[a3]+hex[a4]+&quot;;&quot;;        
+            }
+            else{
+                return original;
+            }
+        }    
+    }
+}
+
+// 转义JS特殊字符
+function JavaScriptEncode(str) 
+
+    var hex=new Array(&#39;0&#39;,&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;7&#39;,&#39;8&#39;,&#39;9&#39;,&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;);
+
+    function changeTo16Hex(charCode){
+        return &quot;\\x&quot; + charCode.charCodeAt(0).toString(16);
+    }
+
+    function encodeCharx(original) {
+
+        var found = true;
+        var thecharchar = original.charAt(0);
+        var thechar = original.charCodeAt(0);
+        switch(thecharchar) {
+            case &#39;\n&#39;: return &quot;\\n&quot;; break; //newline
+            case &#39;\r&#39;: return &quot;\\r&quot;; break; //Carriage return
+            case &#39;\&#39;&#39;: return &quot;\\&#39;&quot;; break;
+            case &#39;&quot;&#39;: return &quot;\\\&quot;&quot;; break;
+            case &#39;\&amp;&#39;: return &quot;\\&amp;&quot;; break;
+            case &#39;\\&#39;: return &quot;\\\\&quot;; break;
+            case &#39;\t&#39;: return &quot;\\t&quot;; break;
+            case &#39;\b&#39;: return &quot;\\b&quot;; break;
+            case &#39;\f&#39;: return &quot;\\f&quot;; break;
+            case &#39;/&#39;: return &quot;\\x2F&quot;; break;
+            case &#39;&lt;&#39;: return &quot;\\x3C&quot;; break;
+            case &#39;&gt;&#39;: return &quot;\\x3E&quot;; break;
+            default:
+                found=false;
+                break;
+        }
+        if(!found){
+            if(thechar &gt; 47 &amp;&amp; thechar &lt; 58){ //数字
+                return original;
+            }
+
+            if(thechar &gt; 64 &amp;&amp; thechar &lt; 91){ //大写字母
+                return original;
+            }
+
+            if(thechar &gt; 96 &amp;&amp; thechar &lt; 123){ //小写字母
+                return original;
+            }        
+
+            if(thechar&gt;127) { //大于127用unicode
+                var c = thechar;
+                var a4 = c%16;
+                c = Math.floor(c/16); 
+                var a3 = c%16;
+                c = Math.floor(c/16);
+                var a2 = c%16;
+                c = Math.floor(c/16);
+                var a1 = c%16;
+                return &quot;\\u&quot;+hex[a1]+hex[a2]+hex[a3]+hex[a4]+&quot;&quot;;        
+            }
+            else {
+                return changeTo16Hex(original);
+            }
+
+        }
+    }     
+
+    var preescape = str;
+    var escaped = &quot;&quot;;
+    var i=0;
+    for(i=0; i &lt; preescape.length; i++){
+        escaped = escaped + encodeCharx(preescape.charAt(i));
+    }
+    return escaped;
+}
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 976041476@qq.com </span>
+    </div>
+</article>
+
+
+<!-- <p>
+    <a  class="dashang" onclick="dashangToggle()">加友</a>
+</p> -->
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>js方法速查</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-12-02, 00:00:00</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-30, 14:30:15</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/02/js%E6%96%B9%E6%B3%95%E9%80%9F%E6%9F%A5/" title="js方法速查">https://lijinhai255.github.io/2019/12/02/js%E6%96%B9%E6%B3%95%E9%80%9F%E6%9F%A5/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <!-- <p>喜欢就点赞,疼爱就打赏</p> -->
+        <p>喜欢就加好友</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span> 
+        <!-- <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span> -->
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#jQuery','#表格','#表单验证','#ECMAScript2015','#大前端','#CSS','#函数','#重学ES5','#对象 - 重学ES5','#Linux','#Desctructuring','#React插件','#Template','#环境安装','#VIM','#工具类','#类 - 重学ES5','#数组 - 重学ES5','#版本控制','#mac快捷键','#js方法','#30 Second',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
