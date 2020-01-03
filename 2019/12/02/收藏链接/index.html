@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>destructore | 阿海blog</title>
-  <meta name="keywords" content=" 重学ES5 , Desctructuring ">
-  <meta name="description" content="destructore | 阿海blog">
+  <title>收藏链接 | 阿海blog</title>
+  <meta name="keywords" content=" 文章 - 重学ES5 ">
+  <meta name="description" content="收藏链接 | 阿海blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="tags">
@@ -479,9 +479,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-destructore" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-收藏链接" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">destructore</h1>
+        <h1 class="article-title">收藏链接</h1>
     
     <div class="article-meta">
         
@@ -489,23 +489,21 @@
         
         <span class="book">
             
-                <a  data-rel="大前端">大前端</a>
+                <a  data-rel="工具">工具</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color1">重学ES5</a>
-            
-            <a class="color5">Desctructuring</a>
+            <a class="color1">文章 - 重学ES5</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 18:20:10'>2019-12-11 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-31 10:33:21'>2019-12-02 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -527,7 +525,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Desctructuring"><span class="toc-text">Desctructuring</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-Destructuring"><span class="toc-text">Array Destructuring</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#收藏链接"><span class="toc-text">收藏链接</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -543,19 +541,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Desctructuring"><a href="#Desctructuring" class="headerlink" title="Desctructuring"></a>Desctructuring</h1><p>在 ES6 中新增了变量赋值的方式：解构赋值。如果对这个概念不了解，我们可以快速展示一个小示例一睹风采：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">'Ilya'</span>, <span class="string">'Kantor'</span>]</span><br><span class="line"><span class="keyword">let</span> firstName = arr[<span class="number">0</span>]</span><br><span class="line"><span class="keyword">let</span> surname = arr[<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<p>想从数组中找出有意义的项要单独赋值给变量（一一的写），在 ES6 中就可以这样写了:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [firstName, surname] = [<span class="string">'Ilya'</span>, <span class="string">'Kantor'</span>]</span><br><span class="line"><span class="built_in">console</span>.log(firstName) <span class="comment">// Ilya</span></span><br><span class="line"><span class="built_in">console</span>.log(surname) <span class="comment">// Kantor</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>[!TIP]<br>解构赋值重点是在赋值，赋值的元素是要拷贝出来赋值给变量，赋值的元素本身是不会被改变的。</p>
-</blockquote>
-<h2 id="Array-Destructuring"><a href="#Array-Destructuring" class="headerlink" title="Array Destructuring"></a>Array Destructuring</h2><p>上述的小示例已经在描述数组的解构赋值了，可是那只是开始。</p>
-<ul>
-<li>可以跳过赋值元素<br>如果想忽略数组的某个元素对变量进行赋值，可以使用逗号来处理。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// second element is not needed</span></span><br><span class="line"><span class="keyword">let</span> [firstName, , title] = [<span class="string">"Julius"</span>, <span class="string">"Caesar"</span>, <span class="string">"Consul"</span>, <span class="string">"of the Roman Republic"</span>];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log( title ); <span class="comment">// Consul</span></span><br></pre></td></tr></table></figure></li>
-<li>赋值元素可以是任意可遍历的对象<br>赋值的元素不仅是数组，它可以是任意可遍历的对象<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c] = <span class="string">"abc"</span>; <span class="comment">// ["a", "b", "c"]</span></span><br><span class="line"><span class="keyword">let</span> [one, two, three] = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+        <h1 id="收藏链接"><a href="#收藏链接" class="headerlink" title="收藏链接"></a>收藏链接</h1><p><a href="https://juejin.im/post/5e070cd9f265da33f8653f00?utm_source=gold_browser_extension" target="_blank" rel="noopener">我写CSS的常用套路</a></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 976041476@qq.com </span>
@@ -569,12 +555,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>destructore</p>
+    <p><span class="copy-title">文章标题:</span>收藏链接</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="阿海">阿海</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-11, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-25, 18:20:10</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/11/destructore/" title="destructore">https://lijinhai255.github.io/2019/12/11/destructore/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-02, 00:00:00</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-31, 10:33:21</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/02/%E6%94%B6%E8%97%8F%E9%93%BE%E6%8E%A5/" title="收藏链接">https://lijinhai255.github.io/2019/12/02/%E6%94%B6%E8%97%8F%E9%93%BE%E6%8E%A5/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
